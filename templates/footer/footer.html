@@ -1,6 +1,6 @@
 {% load static %}
 {% load i18n %}
-<footer class="footer">
+<footer class="footer" style="background-color: #ff0000;">
     <nav class="columns is-vcentered">
         <!-- Left side -->
         <div class="column is-one-fifth">
@@ -15,16 +15,25 @@
         <div class="column is-three-fifth">
             <div class="columns is-mobile is-centered">
                 <figure class="image is-96x96">
-                    <a href="{% url 'login'%}?next={{request.path}}">
-                        {#<h6 class="is-full subtitle is-6 has-text-centered is-marginless">Apoya</h6>#}
-                        <img class="is-rounded" src="{% static 'img/logo-cruz-roja.svg' %}">
+                    <a href="https://twitter.com/BantuNusantara">
+                        <img class="is-rounded" src="{% static 'img/footer_Twitter.png' %}">
+                    </a>
+                </figure>
+                <figure class="image is-96x96">
+                    <a href="https://instagram.com/Bantu.Nusantara">
+                        <img class="is-rounded" src="{% static 'img/footer_Instagram.png' %}">
+                    </a>
+                </figure>
+                <figure class="image is-96x96">
+                    <a href="https://facebook.com/BantuNusantara">
+                        <img class="is-rounded" src="{% static 'img/footer_Facebook.png' %}">
                     </a>
                 </figure>
             </div>
             <div class="columns  is-mobile is-centered">
                 {% if user.is_authenticated %}
-                <p>Usuario: <b>{{ user.get_username }}</b><br>
-                    <a href="{% url 'logout'%}?next={{request.path}}">Cerrar sesión</a>
+                <p>{% trans "Username" %}: <b>{{ user.get_username }}</b><br>
+                    <a href="{% url 'logout'%}?next={{request.path}}">{% trans "Sign Off" %}</a>
                 </p>
                 {% endif %}
             </div>
@@ -34,9 +43,7 @@
         <div class="column is-one-fifth">
             <!-- <div class="level-item"> -->
             <p class="column is-size-7 has-text-centered has-text-right-desktop is-family-monospace">
-                {% trans "Created by" %} <a href="https://melizeche.com">Marcelo Elizeche</a>
-                <br> {% trans "License" %} <a href="https://opensource.org/licenses/GPL-3.0">GPLv3</a>
-                <br><a href="https://github.com/melizeche/ayudapy" target="_blank" rel="noopener noreferrer">{% trans "Source code" %}<span class="icon"><i class="fab fa-github" title="logo Github"></i></span></a>
+                Aplikasi diadaptasi dari <a href="https://ayudapy.org">ayudapy.org</a>
             </p>
             <!-- </div> -->
         </div>

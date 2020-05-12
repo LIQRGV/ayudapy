@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-07 02:17-0400\n"
+"POT-Creation-Date: 2020-05-12 21:00+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,8 @@ msgid ""
 "your home a good option may be the nearest police station or some other "
 "nearby public place."
 msgstr ""
-"Pilih lokasi anda supaya orang-orang bisa menemukan anda, jika anda tidak ingin menandai "
-"rumah anda, anda bisa menandai kantor polisi terdekat atau"
+"Pilih lokasi anda supaya orang-orang bisa menemukan anda, jika anda tidak "
+"ingin menandai rumah anda, anda bisa menandai kantor polisi terdekat atau "
 "tempat publik terdekat lainnya."
 
 #: core/forms.py:42
@@ -49,12 +49,14 @@ msgid ""
 "Example: Due to the current situation I am in need of masks and cleaning "
 "products, any help, even a minimal one, will help me. Thank you so much!"
 msgstr ""
-"Contoh: Karena situasi saat ini, Saya butuh masker dan produk"
-"kebersihan, bantuan dalam sekecil apapun, akan sangat membantu saya. Terima kasih banyak!"
+"Contoh: Karena situasi saat ini, Saya butuh masker dan produk kebersihan, "
+"bantuan dalam sekecil apapun, akan sangat membantu saya. Terima kasih banyak!"
 
 #: core/forms.py:59
 msgid "Registration already entered, cannot duplicate the same request."
-msgstr "Permintaan kamu sudah terdaftar, tidak bisa mendaftar lagi untuk permintaan sejenis."
+msgstr ""
+"Permintaan kamu sudah terdaftar, tidak bisa mendaftar lagi untuk permintaan "
+"sejenis."
 
 #: core/models.py:69
 msgid "Request title"
@@ -73,8 +75,8 @@ msgid ""
 "Here you can tell in detail what you need, <b> the better you tell your "
 "situation the more likely they want to help you </b>"
 msgstr ""
-"Jelaskan secara rinci kebutuhanmu, <b> semakin jelas keadaanmu "
-"semakin besar kemungkinan orang-orang ingin membantu kamu</b>"
+"Jelaskan secara rinci kebutuhanmu, <b> semakin jelas keadaanmu semakin besar "
+"kemungkinan orang-orang ingin membantu kamu</b>"
 
 #: core/models.py:82
 msgid "Name and surname"
@@ -93,8 +95,8 @@ msgid ""
 "Your address, city, neighborhood, references, or how to get there, to get "
 "help"
 msgstr ""
-"Untuk memudahkan orang yang ingin membantu kamu, jelaskan alamat, kota, RT/RW, penanda jalan, atau"
-"cara menuju ke sana"
+"Untuk memudahkan orang yang ingin membantu kamu, jelaskan alamat, kota, RT/"
+"RW, penanda jalan, ataucara menuju ke sana"
 
 #: core/models.py:92
 msgid "Location"
@@ -120,9 +122,21 @@ msgstr "Berhasil ditambahkan"
 msgid "A tool to help people help"
 msgstr "Tempat Membantu Sesama"
 
+#: templates/donation_center/info.html:27
+#, python-format
+msgid ""
+"Esta es una plataforma ciudadana que depende totalmente de la buena voluntad "
+"de la gente. No hay garantías de recibir ayuda sí o sí. La información que "
+"uno carga va a ser 100%% de acceso público."
+msgstr ""
+
+#: templates/donation_center/info.html:31
+msgid "Más info acá"
+msgstr ""
+
 #: templates/footer/contact_us.html:11 templates/footer/general_faq.html:11
-#: templates/footer/legal.html:12 templates/help_request/create.html:13
-#: templates/help_request/info.html:11
+#: templates/footer/legal.html:12 templates/giver/info.html:10
+#: templates/help_request/create.html:13 templates/help_request/info.html:11
 msgid "Home"
 msgstr "Beranda"
 
@@ -155,17 +169,13 @@ msgstr "Ketentuan penggunaan"
 msgid "Frequently asked questions"
 msgstr "FAQ"
 
-#: templates/footer/footer.html:37
-msgid "Created by"
-msgstr "Dikembangkan Oleh"
+#: templates/footer/footer.html:35
+msgid "Username"
+msgstr "Usuario"
 
-#: templates/footer/footer.html:38
-msgid "License"
-msgstr "Lisensi"
-
-#: templates/footer/footer.html:39
-msgid "Source code"
-msgstr "Source Code"
+#: templates/footer/footer.html:36
+msgid "Sign Off"
+msgstr "Cerrar sesión"
 
 #: templates/footer/general_faq.html:45
 msgid "Under development"
@@ -188,14 +198,13 @@ msgstr ""
 "Dengan mengakses dan menggunakan situs web dan basis data BantuNusantara, el "
 "kamu terikat secara hukum atas ketentuan penggunaan berikut "
 
-
 #: templates/footer/legal.html:39
 msgid ""
 "In case the user does not agree with these conditions of use, he will not be "
 "able to access the AyudaPy website."
 msgstr ""
-"Jika kamu tidak setuju dengan ketentuan penggunaan ini, "
-"kamu tidak akan dapat mengakses situs web BantuNusantara."
+"Jika kamu tidak setuju dengan ketentuan penggunaan ini, kamu tidak akan "
+"dapat mengakses situs web BantuNusantara."
 
 #: templates/footer/legal.html:45
 msgid "Information published on the website"
@@ -210,8 +219,8 @@ msgid ""
 msgstr ""
 "Informasi yang disediakan oleh BantuNusantara didasarkan hanya pada "
 "kontribusi yang diberikan pengguna secara sukarela; oleh karena itu, la "
-"tanggung jawab terkait dengan kebenaran data yang dipublikasikan "
-"dalam daftar publik ini bergantung kepada orang yang menggunakannya."
+"tanggung jawab terkait dengan kebenaran data yang dipublikasikan dalam "
+"daftar publik ini bergantung kepada orang yang menggunakannya."
 
 #: templates/footer/legal.html:55
 msgid "Liability"
@@ -222,16 +231,14 @@ msgid ""
 "AyudaPy is not responsible for any erroneous, incomplete or outdated "
 "information published on this website."
 msgstr ""
-"BantuNusantara tidak bertanggung jawab atas informasi yang salah, "
-"tidak lengkap, atau tidak relevan yang dipublikasikan di situs web ini."
+"BantuNusantara tidak bertanggung jawab atas informasi yang salah, tidak "
+"lengkap, atau tidak relevan yang dipublikasikan di situs web ini."
 
 #: templates/footer/legal.html:63
 msgid ""
 "AyudaPy assumes no responsibility for the malfunction of the functions of "
 "the website."
-msgstr ""
-"BantuNusantara tidak bertanggung jawab atas kegagalan fungsi situs web"
-
+msgstr "BantuNusantara tidak bertanggung jawab atas kegagalan fungsi situs web"
 
 #: templates/footer/legal.html:68
 msgid ""
@@ -242,19 +249,17 @@ msgid ""
 "information represented or for the use of erroneous or incomplete "
 "information."
 msgstr ""
-"BantuNusantara tidak bertanggung jawab terhadap " 
-"kerugian atau kerusakan materi dan intelektual "
-"baik secara langsung maupun tidak langsung, yang disebabkan "
-"akses ke situs web ini beserta kontennya. "
-
+"BantuNusantara tidak bertanggung jawab terhadap kerugian atau kerusakan "
+"materi dan intelektual baik secara langsung maupun tidak langsung, yang "
+"disebabkan akses ke situs web ini beserta kontennya. "
 
 #: templates/footer/legal.html:76
 msgid ""
 "AyudaPy is designed to prevent Cross-Site Request Forgery (CSRF) attacks "
 "related to data transmission."
 msgstr ""
-"BantuNusantara dirancang untuk mencegah serangan Pemalsuan Permintaan Lintas Situs (CSRF) "
-"yang terkait dengan transmisi data."
+"BantuNusantara dirancang untuk mencegah serangan Pemalsuan Permintaan Lintas "
+"Situs (CSRF) yang terkait dengan transmisi data."
 
 #: templates/footer/legal.html:80
 msgid ""
@@ -266,14 +271,13 @@ msgid ""
 "the user has transmitted to and from AyudaPy through this website or through "
 "an electronic address."
 msgstr ""
-"Namun, pengiriman data melalui internet tidak sepenuhnya aman. "
-"Oleh karena itu, informasi yang dipublikasikan di situs web BantuNusantara dapat "
+"Namun, pengiriman data melalui internet tidak sepenuhnya aman. Oleh karena "
+"itu, informasi yang dipublikasikan di situs web BantuNusantara dapat "
 "mengalami perubahan atau gangguan serta pelanggaran keamanan dan "
 "kerahasiaan. Untuk alasan ini, BantuNusantara tidak bertanggung jawab atas "
-"penerimaan / non-penerimaan atau pemrosesan / non-pemrosesan informasi "
-"yang telah ditransmisikan pengguna dari dan ke BantuNusantara melalui situs web ini "
-"atau melalui alamat elektronik. "
-
+"penerimaan / non-penerimaan atau pemrosesan / non-pemrosesan informasi yang "
+"telah ditransmisikan pengguna dari dan ke BantuNusantara melalui situs web "
+"ini atau melalui alamat elektronik. "
 
 #: templates/footer/legal.html:90
 msgid "Intellectual property"
@@ -291,9 +295,54 @@ msgstr ""
 msgid "The source code is distributed under the license"
 msgstr "Konten dan data situs web ini didistribusikan di bawah"
 
+#: templates/giver/info.html:25 templates/help_request/info.html:24
+msgid "Important"
+msgstr "Penting"
+
+#: templates/giver/info.html:27 templates/help_request/info.html:26
+#, python-format
+msgid ""
+"This is a citizen platform that depends totally on the good will of the "
+"people. There are no guarantees of help yes or yes. The information that one "
+"uploads will be 100%% publicly accessible."
+msgstr ""
+"Esta es una plataforma ciudadana que depende totalmente de la buena voluntad "
+"de la gente. No hay garantías de recibir ayuda sí o sí. La información que "
+"uno carga va a ser 100%% de acceso público."
+
+#: templates/giver/info.html:32 templates/help_request/info.html:31
+msgid "More Information"
+msgstr "Mas info acá"
+
+#: templates/giver/info.html:35 templates/help_request/info.html:34
+msgid "How does it work"
+msgstr "Cómo funciona"
+
+#: templates/giver/info.html:37 templates/help_request/info.html:36
+msgid ""
+"You have to upload your data: name, contact phone, city, location and what "
+"you need."
+msgstr ""
+"Tenés que cargar tu datos: nombre, teléfono de contacto, ciudad, ubicación y "
+"qué necesitás."
+
+#: templates/giver/info.html:43 templates/help_request/info.html:40
+msgid ""
+"allows you to share your request for help so that more people see it, as "
+"well as offering people who want to help an interface to find those who need "
+"it."
+msgstr ""
+"te permite compartir tu pedido de ayuda para que más gente lo vea, así como "
+"ofrecer a la gente que quiere ayudar una interfaz para buscar a los que "
+"necesitan."
+
+#: templates/giver/info.html:52 templates/help_request/info.html:49
+msgid "OK I understand, I want to continue"
+msgstr "OK entiendo, quiero continuar"
+
 #: templates/help_request/create.html:16
 msgid "Information"
-msgstr "Information"
+msgstr "Informasi"
 
 #: templates/help_request/create.html:17 templates/help_request/info.html:15
 msgid "Receive help"
@@ -317,8 +366,8 @@ msgid ""
 "Move the map to your location and then click on the %(icon)s icon to mark "
 "your location on the map."
 msgstr ""
-"Arahkan peta kepada lokasi kamu dan klik "
-"%(icon)s untuk menandai lokasi kamu di peta."
+"Arahkan peta kepada lokasi kamu dan klik %(icon)s untuk menandai lokasi kamu "
+"di peta."
 
 #: templates/help_request/create.html:54
 #, python-format
@@ -326,8 +375,8 @@ msgid ""
 "If you make a mistake, you can click on the %(icon)s icon to move the "
 "marker. Once corrected click on Save."
 msgstr ""
-"Jika membuat kesalahan, klik %(icon)s untuk mengarahkan "
-"Jika sudah benar, klik 'Save'."
+"Jika membuat kesalahan, klik %(icon)s untuk mengarahkan Jika sudah benar, "
+"klik 'Save'."
 
 #: templates/help_request/create.html:61
 msgid "Ok"
@@ -373,51 +422,6 @@ msgstr "browser kamu mendukung geolokasi"
 msgid "Searching your location…"
 msgstr "Mencari lokasi kamu…"
 
-#: templates/help_request/info.html:24
-msgid "Important"
-msgstr "Penting"
-
-#: templates/help_request/info.html:26
-#, python-format
-msgid ""
-"This is a citizen platform that depends totally on the good will of the "
-"people. There are no guarantees of help yes or yes. The information that one "
-"uploads will be 100%% publicly accessible."
-msgstr ""
-"Esta es una plataforma ciudadana que depende totalmente de la buena voluntad "
-"de la gente. No hay garantías de recibir ayuda sí o sí. La información que "
-"uno carga va a ser 100%% de acceso público."
-
-#: templates/help_request/info.html:31
-msgid "More Information"
-msgstr "Mas info acá"
-
-#: templates/help_request/info.html:34
-msgid "How does it work"
-msgstr "Cómo funciona"
-
-#: templates/help_request/info.html:36
-msgid ""
-"You have to upload your data: name, contact phone, city, location and what "
-"you need."
-msgstr ""
-"Tenés que cargar tu datos: nombre, teléfono de contacto, ciudad, ubicación y "
-"qué necesitás."
-
-#: templates/help_request/info.html:40
-msgid ""
-"allows you to share your request for help so that more people see it, as "
-"well as offering people who want to help an interface to find those who need "
-"it."
-msgstr ""
-"te permite compartir tu pedido de ayuda para que más gente lo vea, así como "
-"ofrecer a la gente que quiere ayudar una interfaz para buscar a los que "
-"necesitan."
-
-#: templates/help_request/info.html:49
-msgid "OK I understand, I want to continue"
-msgstr "OK entiendo, quiero continuar"
-
 #: templates/help_request/post.html:38
 msgid "Request category*"
 msgstr "Categoría del pedido*"
@@ -455,35 +459,35 @@ msgstr "¡Necesito ayuda!"
 msgid "Post your request for people to see it"
 msgstr "Publicá tu pedido para que la gente vea"
 
-#: templates/home.html:19 templates/home.html:48
+#: templates/home.html:19 templates/home.html:50
 msgid "I want to help!"
 msgstr "¡Quiero ayudar!"
 
-#: templates/home.html:20 templates/home.html:49
+#: templates/home.html:20 templates/home.html:51
 msgid "Find someone close to you to help"
 msgstr "Encontrá a alguien cerca tuyo para ayudar"
 
-#: templates/home.html:29 templates/home.html:56
+#: templates/home.html:30 templates/home.html:58
 msgid "Donation Centers!"
-msgstr "¡Centros de Donación!"
+msgstr "Pusat Donasi!"
 
-#: templates/home.html:30 templates/home.html:57
+#: templates/home.html:31 templates/home.html:59
 msgid "See what you can donate and where"
 msgstr "Mirá lo que podés donar y dónde"
 
-#: templates/home.html:37
-msgid "I want to volunteer!"
-msgstr "¡Quiero ser voluntario!"
-
 #: templates/home.html:38
-msgid "Help us to help"
-msgstr "Ayudanos a ayudar"
+msgid "I want to volunteer!"
+msgstr "Saya ingin menjadi relawan"
 
-#: templates/home.html:64
+#: templates/home.html:39
+msgid "Help us to help"
+msgstr "Bantu kami untuk membantu"
+
+#: templates/home.html:66
 msgid "Register a Center!"
 msgstr "¡Registrar Centro!"
 
-#: templates/home.html:65
+#: templates/home.html:67
 msgid "Register a Donation Center"
 msgstr "Registrá un Centro de Donación"
 
@@ -495,15 +499,15 @@ msgstr "Estadísticas"
 
 #: templates/stats/dashboard.html:26
 msgid "Requests summary"
-msgstr "Total de pedidos"
+msgstr "Rangkuman Permintaan"
 
 #: templates/stats/dashboard.html:30
 msgid "Active"
-msgstr "Activos"
+msgstr "Aktif"
 
 #: templates/stats/dashboard.html:36
 msgid "Unique"
-msgstr "Únicos"
+msgstr "Unik"
 
 #: templates/stats/dashboard.html:44
 msgid "Resolved"
@@ -511,26 +515,41 @@ msgstr "Atendidos"
 
 #: templates/stats/dashboard.html:50
 msgid "Today"
-msgstr "Hoy"
+msgstr "Hari ini"
 
 #: templates/stats/dashboard.html:56
 msgid "Yesterday"
-msgstr "Ayer"
+msgstr "Kemarin"
 
 #: templates/stats/dashboard.html:64
 #, fuzzy
 #| msgid "Request category*"
 msgid "Requests per day"
-msgstr "Pedidos por día"
+msgstr "Permintaan per hari"
 
 #: templates/stats/dashboard.html:66
 msgid "Period"
-msgstr "Periodo"
+msgstr "Periode"
 
-#: templates/footer/footer.html:27
-msgid "Sign Off"
-msgstr "Cerrar sesión"
+#, fuzzy
+#~| msgid ""
+#~| "This is a citizen platform that depends totally on the good will of the "
+#~| "people. There are no guarantees of help yes or yes. The information that "
+#~| "one uploads will be 100% publicly accessible."
+#~ msgid ""
+#~ "This is a citizen platform that depends totally on the good will of the "
+#~ "people. There are no guarantees of help yes or yes. The information that "
+#~ "one uploads will be 100% publicly accessible."
+#~ msgstr ""
+#~ "Esta es una plataforma ciudadana que depende totalmente de la buena "
+#~ "voluntad de la gente. No hay garantías de recibir ayuda sí o sí. La "
+#~ "información que uno carga va a ser 100% de acceso público."
 
-#: templates/footer/footer.html:26
-msgid "Username"
-msgstr "Usuario"
+#~ msgid "Created by"
+#~ msgstr "Dikembangkan Oleh"
+
+#~ msgid "License"
+#~ msgstr "Lisensi"
+
+#~ msgid "Source code"
+#~ msgstr "Source Code"

@@ -121,7 +121,7 @@ LOCALE_PATHS = (
 
 )
 
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'id'
 
 TIME_ZONE = 'America/Asuncion'
 

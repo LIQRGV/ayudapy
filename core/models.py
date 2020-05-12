@@ -285,7 +285,7 @@ class Device(models.Model):
     )
 
 
-# User: to represent a user in ayudapy
+# User: to represent a user in BantuNusantara
 
 class User(models.Model):
     user_iid = models.AutoField(

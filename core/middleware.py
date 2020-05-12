@@ -1,5 +1,5 @@
 # Silent (won't fail if there is an exception) middleware
-# to get/create a device when processing a request in AyudaPY
+# to get/create a device when processing a request in BantuNusantara
 import datetime
 import uuid
 from ua_parser import user_agent_parser

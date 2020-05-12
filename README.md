@@ -1,10 +1,10 @@
-# ayudaPy
+# BantuNusantara
 
 Platform to help people help people
 
 #### URL
 
-https://ayudapy.org
+https://bantuNusantara.org
 
 ## Requirements
 

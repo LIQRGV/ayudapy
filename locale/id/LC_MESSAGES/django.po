@@ -529,3 +529,11 @@ msgstr "Pedidos por día"
 #: templates/stats/dashboard.html:66
 msgid "Period"
 msgstr "Periodo"
+
+#: templates/footer/footer.html:27
+msgid "Sign Off"
+msgstr "Cerrar sesión"
+
+#: templates/footer/footer.html:26
+msgid "Username"
+msgstr "Usuario"

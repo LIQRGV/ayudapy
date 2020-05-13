@@ -9,7 +9,7 @@ from .models import HelpRequest
 
 class HelpRequestForm(forms.ModelForm):
     location = PointField(
-        label="Ubicación",
+        label=_("Location"),
         # XXX Move all HTML to the corresponding templates
         error_messages={'required': mark_safe('{}\n<br>{} <a href="#" class="is-link modal-button" data-target="#myModal" aria-haspopup="true">{}</a></p><p id="div_direccion" style="font-size: 10px; margin-bottom: 5px;"></p>'.format(
             _("You forgot to mark your location on the map"),

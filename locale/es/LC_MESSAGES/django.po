@@ -537,3 +537,7 @@ msgstr "Cerrar sesión"
 #: templates/footer/footer.html:26
 msgid "Username"
 msgstr "Usuario"
+
+#: templates/help_request/details.html:23
+msgid "Help Information"
+msgstr "Info Ayudar"

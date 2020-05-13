@@ -347,7 +347,7 @@ class User(models.Model):
         null=True,
     )
     location = models.PointField(
-        "Ubicación",
+        _("Location"),
         help_text="Ubicación por defecto del Usuario",
         blank=True,
         null=True,

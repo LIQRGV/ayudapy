@@ -7,7 +7,7 @@
 
 {% load leaflet_tags %} 
 {% load static %}
-{% load l10n %}
+{% load i18n %}
 {% load humanize %}
 {% block bread %}
   <nav class="breadcrumb  has-arrow-separator" aria-label="breadcrumbs">
@@ -20,7 +20,7 @@
           <span>Inicio</span>
         </a>
       </li>
-      <li><a href="/dar">Info ayudar</a></li>
+      <li><a href="/dar">{% trans "Help Information" %}</a></li>
       <li><a href="/pedidos">Pedidos de ayuda</a></li>
       <li class="is-active"><a href="#" aria-current="page">Pedido #{{help_request.id}}</a></li>
       </ul>

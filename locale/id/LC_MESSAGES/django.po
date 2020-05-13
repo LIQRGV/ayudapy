@@ -540,3 +540,7 @@ msgstr "Periode"
 
 #~ msgid "Source code"
 #~ msgstr "Source Code"
+
+#: templates/help_request/details.html:23
+msgid "Help Information"
+msgstr "Informasi Bantuan"

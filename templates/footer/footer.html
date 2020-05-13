@@ -4,27 +4,24 @@
     <nav class="columns is-vcentered">
         <!-- Left side -->
         <div class="column is-one-fifth">
-            <p class="level-item">
-            <ul class="list is-fullwidth-mobile has-text-left-desktop has-text-centered-mobile">
-                <a class="list-item" href="{% url 'legal' %}">{% trans "Terms of use" %}</a>
-                <a class="list-item" href="{% url 'general_faq' %}">{% trans "Frequently asked questions" %}</a>
-                <a class="list-item" href="{% url 'contact_us' %}">{% trans "Contact information" %}</a>
-            </ul>
+            <a class="navbar-item hover-grow" style="color: white" href="{% url 'legal' %}">{% trans "Terms of use" %}</a>
+            <a class="navbar-item hover-grow" style="color: white" href="{% url 'general_faq' %}">{% trans "Frequently asked questions" %}</a>
+            <a class="navbar-item hover-grow" style="color: white" href="{% url 'contact_us' %}">{% trans "Contact information" %}</a>
         </div>
 
         <div class="column is-three-fifth">
             <div class="columns is-mobile is-centered">
-                <figure class="image is-96x96">
+                <figure class="image is-50x50">
                     <a href="https://twitter.com/BantuNusantara">
                         <img class="is-rounded" src="{% static 'img/footer_Twitter.png' %}">
                     </a>
                 </figure>
-                <figure class="image is-96x96">
+                <figure class="image is-50x50">
                     <a href="https://instagram.com/Bantu.Nusantara">
                         <img class="is-rounded" src="{% static 'img/footer_Instagram.png' %}">
                     </a>
                 </figure>
-                <figure class="image is-96x96">
+                <figure class="image is-50x50">
                     <a href="https://facebook.com/BantuNusantara">
                         <img class="is-rounded" src="{% static 'img/footer_Facebook.png' %}">
                     </a>
@@ -42,7 +39,7 @@
         <!-- Right side -->
         <div class="column is-one-fifth">
             <!-- <div class="level-item"> -->
-            <p class="column is-size-7 has-text-centered has-text-right-desktop is-family-monospace">
+            <p class="column is-size-7 has-text-centered has-text-right-desktop is-family-monospace" style="color: white" >
                 Aplikasi diadaptasi dari <a href="https://ayudapy.org">ayudapy.org</a>
             </p>
             <!-- </div> -->

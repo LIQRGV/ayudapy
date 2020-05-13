@@ -36,8 +36,8 @@ msgid ""
 "your home a good option may be the nearest police station or some other "
 "nearby public place."
 msgstr ""
-"Pilih lokasi anda supaya orang-orang bisa menemukan anda, jika anda tidak "
-"ingin menandai rumah anda, anda bisa menandai kantor polisi terdekat atau "
+"Pilih lokasi anda supaya orang-orang bisa menemukan kamu, jika anda tidak "
+"ingin menandai rumah kamu, anda bisa menandai kantor polisi terdekat atau "
 "tempat publik terdekat lainnya."
 
 #: core/forms.py:42
@@ -122,18 +122,6 @@ msgstr "Berhasil ditambahkan"
 msgid "A tool to help people help"
 msgstr "Tempat Membantu Sesama"
 
-#: templates/donation_center/info.html:27
-#, python-format
-msgid ""
-"Esta es una plataforma ciudadana que depende totalmente de la buena voluntad "
-"de la gente. No hay garantías de recibir ayuda sí o sí. La información que "
-"uno carga va a ser 100%% de acceso público."
-msgstr ""
-
-#: templates/donation_center/info.html:31
-msgid "Más info acá"
-msgstr ""
-
 #: templates/footer/contact_us.html:11 templates/footer/general_faq.html:11
 #: templates/footer/legal.html:12 templates/giver/info.html:10
 #: templates/help_request/create.html:13 templates/help_request/info.html:11
@@ -147,7 +135,7 @@ msgstr "Kontak"
 
 #: templates/footer/contact_us.html:25
 msgid "Do you want to contact us?"
-msgstr "Hubungi kami"
+msgstr "kamu mau menghubungi kami?"
 
 #: templates/footer/contact_us.html:27
 msgid "If you need help, click here."
@@ -158,8 +146,8 @@ msgid ""
 "If you have any questions or queries about the platform, you can contact us "
 "through the social networks below, or send us an email to"
 msgstr ""
-"Si tenés alguna duda o consulta sobre la plataforma, podés contactarnos a "
-"través de las redes sociales que están más abajo, o envianos un correo a"
+"Jika kamu memiliki pertanyaan tentang platform ini, silahkan ke akun media sosial kami "
+"dan dengan senang hati kami akan membantu."
 
 #: templates/footer/footer.html:9 templates/footer/legal.html:16
 msgid "Terms of use"
@@ -171,11 +159,11 @@ msgstr "FAQ"
 
 #: templates/footer/footer.html:35
 msgid "Username"
-msgstr "Usuario"
+msgstr "Username"
 
 #: templates/footer/footer.html:36
 msgid "Sign Off"
-msgstr "Cerrar sesión"
+msgstr "Keluar"
 
 #: templates/footer/general_faq.html:45
 msgid "Under development"
@@ -288,12 +276,12 @@ msgid ""
 "The content of this web page and the data of AyudaPy are distributed under "
 "the license"
 msgstr ""
-"El contenido de esta página web y los datos de AyudaPy están distribuidos "
-"bajo la licencia"
+"Konten situs web dan data BantuNusantara didistribusi di bawah  "
+"lisensi"
 
 #: templates/footer/legal.html:98
 msgid "The source code is distributed under the license"
-msgstr "Konten dan data situs web ini didistribusikan di bawah"
+msgstr "Konten dan data situs web ini didistribusikan di bawah lisensi"
 
 #: templates/giver/info.html:25 templates/help_request/info.html:24
 msgid "Important"
@@ -306,25 +294,25 @@ msgid ""
 "people. There are no guarantees of help yes or yes. The information that one "
 "uploads will be 100%% publicly accessible."
 msgstr ""
-"Esta es una plataforma ciudadana que depende totalmente de la buena voluntad "
-"de la gente. No hay garantías de recibir ayuda sí o sí. La información que "
-"uno carga va a ser 100%% de acceso público."
+"BantuNusantara adalah platform yang sepenuhnya bergantung pada niat baik penggunanya. "
+"Tak ada jaminan bantuan akan datang. "
+"Data yang kamu unggah 100%% dapat diakses secara publik."
 
 #: templates/giver/info.html:32 templates/help_request/info.html:31
 msgid "More Information"
-msgstr "Mas info acá"
+msgstr "Informasi lebih lanjut"
 
 #: templates/giver/info.html:35 templates/help_request/info.html:34
 msgid "How does it work"
-msgstr "Cómo funciona"
+msgstr "Bagaimana BantuNusantara bekerja"
 
 #: templates/giver/info.html:37 templates/help_request/info.html:36
 msgid ""
 "You have to upload your data: name, contact phone, city, location and what "
 "you need."
 msgstr ""
-"Tenés que cargar tu datos: nombre, teléfono de contacto, ciudad, ubicación y "
-"qué necesitás."
+"kamu harus mengunggah: nama, telefon, kota, lokasi dan "
+"kebutuhanmu."
 
 #: templates/giver/info.html:43 templates/help_request/info.html:40
 msgid ""
@@ -332,13 +320,13 @@ msgid ""
 "well as offering people who want to help an interface to find those who need "
 "it."
 msgstr ""
-"te permite compartir tu pedido de ayuda para que más gente lo vea, así como "
-"ofrecer a la gente que quiere ayudar una interfaz para buscar a los que "
-"necesitan."
+"Kami membantu kamu untuk membagikan informasi permintaanmu supaya orang-orang dapat melihat "
+"dan juga membantu orang-orang yang ingin berbagi untuk membantu orang yang membutuhkan "
+
 
 #: templates/giver/info.html:52 templates/help_request/info.html:49
 msgid "OK I understand, I want to continue"
-msgstr "OK entiendo, quiero continuar"
+msgstr "OK Saya mengerti, Saya ingin melanjutkan"
 
 #: templates/help_request/create.html:16
 msgid "Information"
@@ -400,15 +388,15 @@ msgstr "Lokasi kamu"
 
 #: templates/help_request/create.html:107
 msgid "Move this marker to your location"
-msgstr "Arahkan kepada lokasi kamu"
+msgstr "Tandai lokasi kamu" #masi belum
 
 #: templates/help_request/create.html:121
 msgid "Found you!"
-msgstr "Kami menemukan lokasi kamu!"
+msgstr "Kami menemukan lokasi kamu!" #masi belum
 
 #: templates/help_request/create.html:134
 msgid "Did not find you!"
-msgstr "Kami tidak menemukan lokasi kamu!"
+msgstr "Kami tidak menemukan lokasi kamu!" #masi belum
 
 #: templates/help_request/create.html:136
 msgid "Can not find you, move the marker further below."
@@ -424,48 +412,47 @@ msgstr "Mencari lokasi kamu…"
 
 #: templates/help_request/post.html:38
 msgid "Request category*"
-msgstr "Categoría del pedido*"
+msgstr "Kategori permintaan"
 
 #: templates/help_request/post.html:39
-msgid ""
-"Chose the categories of your request (you can select more than one category)"
-msgstr "Elegí las categorías del pedido (podés marcar varias categorías)"
+msgid "Chose the categories of your request (you can select more than one category)"
+msgstr "Pilih kategori permintaanmu (kamu bisa memilih lebih dari 1)"
 
 #: templates/help_request/post.html:49
-msgid "Provisions"
+msgid "Ketentuan"
 msgstr "Víveres"
 
 #: templates/help_request/post.html:61
 msgid "Babies"
-msgstr "Bebés"
+msgstr "Kebutuhan bayi"
 
 #: templates/help_request/post.html:73
 msgid "Medicine"
-msgstr "Remedios"
+msgstr "Obat"
 
 #: templates/help_request/post.html:85
 msgid "Cleaning"
-msgstr "Limpieza"
+msgstr "Alat kebersihan"
 
 #: templates/help_request/post.html:124
 msgid "Upload a photo"
-msgstr "Adjuntá una foto"
+msgstr "Unggah foto"
 
 #: templates/home.html:11
 msgid "I need help!"
-msgstr "¡Necesito ayuda!"
+msgstr "Saya butuh bantuan!"
 
 #: templates/home.html:12
 msgid "Post your request for people to see it"
-msgstr "Publicá tu pedido para que la gente vea"
+msgstr "Unggah permintaanmu supaya orang-orang dapat melihat"
 
 #: templates/home.html:19 templates/home.html:50
 msgid "I want to help!"
-msgstr "¡Quiero ayudar!"
+msgstr "Saya ingin membantu!"
 
 #: templates/home.html:20 templates/home.html:51
 msgid "Find someone close to you to help"
-msgstr "Encontrá a alguien cerca tuyo para ayudar"
+msgstr "Cari seseorang di dekatmu untuk dibantu"
 
 #: templates/home.html:30 templates/home.html:58
 msgid "Donation Centers!"
@@ -473,7 +460,7 @@ msgstr "Pusat Donasi!"
 
 #: templates/home.html:31 templates/home.html:59
 msgid "See what you can donate and where"
-msgstr "Mirá lo que podés donar y dónde"
+msgstr "Cek apa yang bisa kamu donasikan dan lokasinya"
 
 #: templates/home.html:38
 msgid "I want to volunteer!"
@@ -495,7 +482,7 @@ msgstr "Registrá un Centro de Donación"
 #, fuzzy
 #| msgid "State"
 msgid "Stats"
-msgstr "Estadísticas"
+msgstr "Statistik"
 
 #: templates/stats/dashboard.html:26
 msgid "Requests summary"
@@ -511,7 +498,7 @@ msgstr "Unik"
 
 #: templates/stats/dashboard.html:44
 msgid "Resolved"
-msgstr "Atendidos"
+msgstr "Selesai"
 
 #: templates/stats/dashboard.html:50
 msgid "Today"

@@ -10,29 +10,42 @@
         </div>
 
         <div class="column is-three-fifth">
-            <div class="columns is-mobile is-centered">
-                <figure class="image is-50x50">
-                    <a href="https://twitter.com/BantuNusantara">
-                        <img class="is-rounded" src="{% static 'img/footer_Twitter.png' %}">
-                    </a>
-                </figure>
-                <figure class="image is-50x50">
-                    <a href="https://instagram.com/Bantu.Nusantara">
-                        <img class="is-rounded" src="{% static 'img/footer_Instagram.png' %}">
-                    </a>
-                </figure>
-                <figure class="image is-50x50">
-                    <a href="https://facebook.com/BantuNusantara">
-                        <img class="is-rounded" src="{% static 'img/footer_Facebook.png' %}">
-                    </a>
-                </figure>
-            </div>
-            <div class="columns  is-mobile is-centered">
-                {% if user.is_authenticated %}
-                <p>{% trans "Username" %}: <b>{{ user.get_username }}</b><br>
-                    <a href="{% url 'logout'%}?next={{request.path}}">{% trans "Sign Off" %}</a>
-                </p>
-                {% endif %}
+            <div class="columns is-vcentered">
+                <div class="column is-one-third"></div>
+                <div class="column is-one-third">
+                    <div class="columns is-mobile is-centered">
+                        <div class="column is-one-third">
+                            <figure class="image is-48x48">
+                                <a href="https://twitter.com/BantuNusantara">
+                                    <img src="{% static 'img/footer_Twitter.png' %}">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="column is-one-third">
+                            <figure class="image is-48x48">
+                                <a href="https://instagram.com/Bantu.Nusantara">
+                                    <img src="{% static 'img/footer_Instagram.png' %}">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="column is-one-third">
+                            <figure class="image is-48x48">
+                                <a href="https://facebook.com/BantuNusantara">
+                                    <img src="{% static 'img/footer_Facebook.png' %}">
+                                </a>
+                            </figure>
+                        </div>
+
+                    </div>
+                    <div class="columns  is-mobile is-centered">
+                        {% if user.is_authenticated %}
+                        <p>{% trans "Username" %}: <b>{{ user.get_username }}</b><br>
+                            <a href="{% url 'logout'%}?next={{request.path}}">{% trans "Sign Off" %}</a>
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="column is-one-third"></div>
             </div>
         </div>
 

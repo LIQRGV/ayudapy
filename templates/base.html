@@ -137,7 +137,13 @@
 </head>
 
 <body class="Site">
-    <section class="is-fullwidth" style="height: 10%;">
+    <section class="is-fullwidth" style="
+        height: 10%;
+        background-image: url('{% static "img/header_Background.png" %}');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+    ">
         <div class="column is-8-mobile is-offset-2-mobile is-4-tablet is-offset-4-tablet is-2-desktop is-offset-5-desktop ">
             <a href="/">
                 <figure class="image is-16by1">
@@ -149,7 +155,7 @@
         </div>
     </section>
     <main class="Site-content" style="
-        background-image: url('{% static "img/body_Background.png" %}');
+        background-image: url('{% static "img/body_Background.jpg" %}');
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100%;

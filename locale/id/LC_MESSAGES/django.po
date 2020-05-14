@@ -320,7 +320,7 @@ msgid ""
 "well as offering people who want to help an interface to find those who need "
 "it."
 msgstr ""
-"Kami membantu kamu untuk membagikan informasi permintaanmu supaya orang-orang dapat melihat "
+"membantu kamu untuk membagikan informasi kebutuhanmu supaya orang-orang dapat melihat "
 "dan juga membantu orang-orang yang ingin berbagi untuk membantu orang yang membutuhkan "
 
 

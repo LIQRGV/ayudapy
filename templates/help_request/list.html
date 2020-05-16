@@ -3,6 +3,7 @@
 {% load humanize %}
 {% load static %}
 {% load pipeline %}
+{% load i18n %}
 
 {% block bread %}
   <nav class="breadcrumb  has-arrow-separator" aria-label="breadcrumbs">
@@ -12,18 +13,18 @@
             <span class="icon is-small">
               <i class="fas fa-home" aria-hidden="true"></i>
             </span>
-            <span>Inicio</span>
+            <span>{% trans "Home" %}</span>
           </a>
         </li>
         <li><a href="/dar">Info</a></li>
-        <li class="is-active"><a href="#" aria-current="page">Pedidos de ayuda</a></li>
+        <li class="is-active"><a href="#" aria-current="page">{% trans "Help Requests" %}</a></li>
       </ul>
   </nav>
 {% endblock bread %}
 
 {% block content%}
 <div class="title center">
-  Pedidos cercanos {{help_request.id}}
+  {% trans "Nearby Requests" %} {{help_request.id}}
   <div id="loading-indicator" class="loader-wrapper">
     <div class="loader is-loading"></div>
   </div>
@@ -41,7 +42,7 @@
                         <div class="select is-small">
                           <input name="cities" class="input is-small" list="list_cities" placeholder="Seleccionar ciudad..." autocomplete="off">
                         </div>
-                          <p class="help has-text-info"> Si no ves tu ciudad es porque no hay pedidos!</p>
+                          <p class="help has-text-info">{% trans "If you don't see your city it is because there are no request" %}</p>
                       </div>
                     </div>
                   </div>
@@ -67,7 +68,7 @@
 	<button id="find-me" class="button is-success  is-outlined is-fullwidth"><span class="icon is-small">
 	    <i class="fas fa-location-arrow"></i>
 	  </span>
-	  <span>Mi ubicación</span>
+	  <span>{% trans "My Location" %}</span>
 	</button>
 	<p id="status"></p>
       </div>
@@ -89,7 +90,7 @@
 	    </div>
 	    <div class="control" >
 	      <button class="button is-warning is-small" id="search-button">
-		Buscar
+		{%trans "Search" %}
 	      </button>
 	    </div>
           </div>
@@ -100,7 +101,7 @@
 
         <div class="panel is-info">
           <p class="panel-heading">
-            Últimos pedidos de ayuda
+            {% trans "Last Request For Help"  %}
           </p>
           <div style="overflow-y:auto;max-height:75vh;padding:15px;">
 	    <div id="table">
@@ -141,11 +142,9 @@
     </script>
 
     <script type="text/template" id="table-empty-template">
-      {% verbatim %}
-	<div class="media">
-	    <h1>No se encuentran pedidos de ayuda en la ubicación actual.</h1>
-	</div>
-      {% endverbatim %}
+        <div class="media">
+            <h1>{% trans "No requests for help found at current location." %}</h1>
+        </div>
     </script>
 
     <script type="text/template" id="table-paginator-template">

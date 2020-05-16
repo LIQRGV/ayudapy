@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-12 21:00+0800\n"
+"POT-Creation-Date: 2020-05-16 13:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/forms.py:12 core/models.py:92 core/models.py:350
+msgid "Location"
+msgstr "Lokasi"
 
 #: core/forms.py:15
 msgid "You forgot to mark your location on the map"
@@ -98,10 +102,6 @@ msgstr ""
 "Untuk memudahkan orang yang ingin membantu kamu, jelaskan alamat, kota, RT/"
 "RW, penanda jalan, ataucara menuju ke sana"
 
-#: core/models.py:92
-msgid "Location"
-msgstr "Lokasi"
-
 #: core/models.py:102
 msgid "Photo"
 msgstr "Foto"
@@ -123,12 +123,13 @@ msgid "A tool to help people help"
 msgstr "Tempat Membantu Sesama"
 
 #: templates/footer/contact_us.html:11 templates/footer/general_faq.html:11
-#: templates/footer/legal.html:12 templates/giver/info.html:10
+#: templates/footer/legal.html:12 templates/giver/info.html:11
 #: templates/help_request/create.html:13 templates/help_request/info.html:11
+#: templates/help_request/list.html:16
 msgid "Home"
 msgstr "Beranda"
 
-#: templates/footer/contact_us.html:14 templates/footer/footer.html:11
+#: templates/footer/contact_us.html:14 templates/footer/footer.html:9
 #: templates/footer/general_faq.html:49
 msgid "Contact information"
 msgstr "Kontak"
@@ -146,22 +147,22 @@ msgid ""
 "If you have any questions or queries about the platform, you can contact us "
 "through the social networks below, or send us an email to"
 msgstr ""
-"Jika kamu memiliki pertanyaan tentang platform ini, silahkan ke akun media sosial kami "
-"dan dengan senang hati kami akan membantu."
+"Jika kamu memiliki pertanyaan tentang platform ini, silahkan ke akun media "
+"sosial kami dan dengan senang hati kami akan membantu."
 
-#: templates/footer/footer.html:9 templates/footer/legal.html:16
+#: templates/footer/footer.html:7 templates/footer/legal.html:16
 msgid "Terms of use"
 msgstr "Ketentuan penggunaan"
 
-#: templates/footer/footer.html:10 templates/footer/general_faq.html:14
+#: templates/footer/footer.html:8 templates/footer/general_faq.html:14
 msgid "Frequently asked questions"
 msgstr "FAQ"
 
-#: templates/footer/footer.html:35
+#: templates/footer/footer.html:42
 msgid "Username"
 msgstr "Username"
 
-#: templates/footer/footer.html:36
+#: templates/footer/footer.html:43
 msgid "Sign Off"
 msgstr "Keluar"
 
@@ -276,45 +277,47 @@ msgid ""
 "The content of this web page and the data of AyudaPy are distributed under "
 "the license"
 msgstr ""
-"Konten situs web dan data BantuNusantara didistribusi di bawah  "
-"lisensi"
+"Konten situs web dan data BantuNusantara didistribusi di bawah  lisensi"
 
 #: templates/footer/legal.html:98
 msgid "The source code is distributed under the license"
 msgstr "Konten dan data situs web ini didistribusikan di bawah lisensi"
 
-#: templates/giver/info.html:25 templates/help_request/info.html:24
+#: templates/giver/info.html:15 templates/help_request/details.html:24
+#: templates/help_request/list_by_city.html:14
+msgid "Help Information"
+msgstr "Informasi Bantuan"
+
+#: templates/giver/info.html:26 templates/help_request/info.html:24
 msgid "Important"
 msgstr "Penting"
 
-#: templates/giver/info.html:27 templates/help_request/info.html:26
+#: templates/giver/info.html:28 templates/help_request/info.html:27
 #, python-format
 msgid ""
 "This is a citizen platform that depends totally on the good will of the "
 "people. There are no guarantees of help yes or yes. The information that one "
 "uploads will be 100%% publicly accessible."
 msgstr ""
-"BantuNusantara adalah platform yang sepenuhnya bergantung pada niat baik penggunanya. "
-"Tak ada jaminan bantuan akan datang. "
-"Data yang kamu unggah 100%% dapat diakses secara publik."
+"BantuNusantara adalah platform yang sepenuhnya bergantung pada niat baik "
+"penggunanya. Tak ada jaminan bantuan akan datang. Data yang kamu unggah "
+"100%% dapat diakses secara publik."
 
-#: templates/giver/info.html:32 templates/help_request/info.html:31
+#: templates/giver/info.html:33 templates/help_request/info.html:31
 msgid "More Information"
 msgstr "Informasi lebih lanjut"
 
-#: templates/giver/info.html:35 templates/help_request/info.html:34
+#: templates/giver/info.html:36 templates/help_request/info.html:34
 msgid "How does it work"
 msgstr "Bagaimana BantuNusantara bekerja"
 
-#: templates/giver/info.html:37 templates/help_request/info.html:36
+#: templates/giver/info.html:38 templates/help_request/info.html:36
 msgid ""
 "You have to upload your data: name, contact phone, city, location and what "
 "you need."
-msgstr ""
-"kamu harus mengunggah: nama, telefon, kota, lokasi dan "
-"kebutuhanmu."
+msgstr "kamu harus mengunggah: nama, telefon, kota, lokasi dan kebutuhanmu."
 
-#: templates/giver/info.html:43 templates/help_request/info.html:40
+#: templates/giver/info.html:44 templates/help_request/info.html:40
 msgid ""
 "allows you to share your request for help so that more people see it, as "
 "well as offering people who want to help an interface to find those who need "
@@ -323,8 +326,7 @@ msgstr ""
 "membantu kamu untuk membagikan informasi kebutuhanmu supaya orang-orang dapat melihat "
 "dan juga membantu orang-orang yang ingin berbagi untuk membantu orang yang membutuhkan "
 
-
-#: templates/giver/info.html:52 templates/help_request/info.html:49
+#: templates/giver/info.html:53 templates/help_request/info.html:49
 msgid "OK I understand, I want to continue"
 msgstr "OK Saya mengerti, Saya ingin melanjutkan"
 
@@ -388,16 +390,19 @@ msgstr "Lokasi kamu"
 
 #: templates/help_request/create.html:107
 msgid "Move this marker to your location"
-msgstr "Tandai lokasi kamu" #masi belum
+msgstr "Tandai lokasi kamu"
 
+# masi belum
 #: templates/help_request/create.html:121
 msgid "Found you!"
-msgstr "Kami menemukan lokasi kamu!" #masi belum
+msgstr "Kami menemukan lokasi kamu!"
 
+# masi belum
 #: templates/help_request/create.html:134
 msgid "Did not find you!"
-msgstr "Kami tidak menemukan lokasi kamu!" #masi belum
+msgstr "Kami tidak menemukan lokasi kamu!"
 
+# masi belum
 #: templates/help_request/create.html:136
 msgid "Can not find you, move the marker further below."
 msgstr "Kami tidak menemukan lokasi kamu, arahkan penanda."
@@ -410,17 +415,48 @@ msgstr "browser kamu mendukung geolokasi"
 msgid "Searching your location…"
 msgstr "Mencari lokasi kamu…"
 
+#: templates/help_request/list.html:20
+msgid "Help Requests"
+msgstr ""
+
+#: templates/help_request/list.html:27
+msgid "Nearby Requests"
+msgstr ""
+
+#: templates/help_request/list.html:45
+msgid "If you don't see your city it is because there are no request"
+msgstr ""
+
+#: templates/help_request/list.html:71
+#, fuzzy
+#| msgid "Location"
+msgid "My Location"
+msgstr "Lokasi"
+
+#: templates/help_request/list.html:93
+msgid "Search"
+msgstr ""
+
+#: templates/help_request/list.html:104
+msgid "Last Request For Help"
+msgstr ""
+
+#: templates/help_request/list.html:146
+msgid "No requests for help found at current location."
+msgstr ""
+
 #: templates/help_request/post.html:38
 msgid "Request category*"
 msgstr "Kategori permintaan"
 
 #: templates/help_request/post.html:39
-msgid "Chose the categories of your request (you can select more than one category)"
+msgid ""
+"Chose the categories of your request (you can select more than one category)"
 msgstr "Pilih kategori permintaanmu (kamu bisa memilih lebih dari 1)"
 
 #: templates/help_request/post.html:49
-msgid "Ketentuan"
-msgstr "Víveres"
+msgid "Provisions"
+msgstr ""
 
 #: templates/help_request/post.html:61
 msgid "Babies"
@@ -517,30 +553,3 @@ msgstr "Permintaan per hari"
 #: templates/stats/dashboard.html:66
 msgid "Period"
 msgstr "Periode"
-
-#, fuzzy
-#~| msgid ""
-#~| "This is a citizen platform that depends totally on the good will of the "
-#~| "people. There are no guarantees of help yes or yes. The information that "
-#~| "one uploads will be 100% publicly accessible."
-#~ msgid ""
-#~ "This is a citizen platform that depends totally on the good will of the "
-#~ "people. There are no guarantees of help yes or yes. The information that "
-#~ "one uploads will be 100% publicly accessible."
-#~ msgstr ""
-#~ "Esta es una plataforma ciudadana que depende totalmente de la buena "
-#~ "voluntad de la gente. No hay garantías de recibir ayuda sí o sí. La "
-#~ "información que uno carga va a ser 100% de acceso público."
-
-#~ msgid "Created by"
-#~ msgstr "Dikembangkan Oleh"
-
-#~ msgid "License"
-#~ msgstr "Lisensi"
-
-#~ msgid "Source code"
-#~ msgstr "Source Code"
-
-#: templates/help_request/details.html:23
-msgid "Help Information"
-msgstr "Informasi Bantuan"

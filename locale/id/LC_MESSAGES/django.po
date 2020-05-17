@@ -511,15 +511,15 @@ msgstr "Peta dari Google Maps"
 
 #: templates/help_request/details.html:178
 msgid "You can share this order by clicking on the buttons"
-msgstr ""
+msgstr "Kamu dapat membagikan permohonan bantuan ini dengan klik tombol"
 
 #: templates/help_request/list.html:27
 msgid "Nearby Requests"
-msgstr ""
+msgstr "Permohonan bantuan terdekat"
 
 #: templates/help_request/list.html:43
 msgid "Select city..."
-msgstr ""
+msgstr "Pilih kota..."
 
 #: templates/help_request/list.html:45
 msgid "If you don't see your city it is because there are no request"
@@ -532,7 +532,7 @@ msgstr "Lokasi saya"
 
 #: templates/help_request/list.html:88
 msgid "Search by title or description, Example: Diaper"
-msgstr ""
+msgstr "Cari berdasarkan judul atau deskripsi, Contoh: Popok"
 
 #: templates/help_request/list.html:93
 msgid "Search"
@@ -613,7 +613,7 @@ msgstr "¡Registrar Centro!"
 
 #: templates/home.html:67
 msgid "Register a Donation Center"
-msgstr "Registrá un Centro de Donación"
+msgstr "Daftarkan pusat donasi"
 
 #: templates/stats/dashboard.html:16
 #, fuzzy

@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-16 13:53+0800\n"
+"POT-Creation-Date: 2020-05-17 17:23+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +17,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: conf/urls.py:23
+msgid "giver"
+msgstr "pemberi"
+
+#: conf/urls.py:25 conf/urls.py:41
+msgid "volunteer"
+msgstr "relawan"
+
+#: conf/urls.py:26
+msgid "general_faq"
+msgstr "faq"
+
+#: conf/urls.py:27
+msgid "contact_us"
+msgstr "kontak"
+
+#: conf/urls.py:29
+msgid "help_request"
+msgstr "permohonan_bantuan"
+
+#: conf/urls.py:30
+msgid "request_form"
+msgstr "form_bantuan"
+
+#: conf/urls.py:31 conf/urls.py:33 core/utils.py:43 core/views.py:93
+msgid "request"
+msgstr "bantuan"
+
+#: conf/urls.py:32 templates/help_request/details.html:123
+msgid "request_city"
+msgstr "kota_permintaan"
+
+#: conf/urls.py:37 conf/urls.py:39 org/views.py:50
+msgid "donations"
+msgstr "donasi"
+
+#: conf/urls.py:38
+msgid "donation_by_city"
+msgstr "donasi_berdasarkan_kota"
+
 #: core/forms.py:12 core/models.py:92 core/models.py:350
+#: templates/help_request/details.html:125
 msgid "Location"
 msgstr "Lokasi"
 
@@ -86,11 +126,12 @@ msgstr ""
 msgid "Name and surname"
 msgstr "Nama Lengkap"
 
-#: core/models.py:83
+#: core/models.py:83 templates/help_request/details.html:104
 msgid "Telephone contact"
 msgstr "Telfon"
 
-#: core/models.py:85 templates/help_request/create.html:76
+#: core/models.py:85 templates/help_request/create.html:77
+#: templates/help_request/details.html:118
 msgid "Address"
 msgstr "Alamat"
 
@@ -122,10 +163,59 @@ msgstr "Berhasil ditambahkan"
 msgid "A tool to help people help"
 msgstr "Tempat Membantu Sesama"
 
+#: templates/donation_center/info.html:27 templates/giver/info.html:28
+#: templates/help_request/info.html:26
+#, python-format
+msgid ""
+"This is a citizen platform that depends totally on the good will of the "
+"people. There are no guarantees of help yes or yes. The information that one "
+"uploads will be 100%% publicly accessible."
+msgstr ""
+"BantuNusantara adalah platform yang sepenuhnya bergantung pada niat baik "
+"penggunanya. Tak ada jaminan bantuan akan datang. BantuNusantara tidak "
+"menghimpun donasi. Bantuan diberikan langsung oleh pemberi bantuan ke orang "
+"yang membutuhkan dan pelantar ini hanya menjembatani informasi saja. Data "
+"yang kamu unggah 100%% dapat diakses secara publik."
+
+#: templates/donation_center/info.html:32 templates/giver/info.html:33
+#: templates/help_request/info.html:31
+msgid "More Information"
+msgstr "Informasi lebih lanjut"
+
+#: templates/donation_center/list.html:138
+#, fuzzy
+#| msgid "No requests for help found at current location."
+msgid "No donation centers found at current location."
+msgstr "Tidak ditemukan permohonan bantuan di lokasi kamu"
+
+#: templates/donation_center/list.html:145 templates/help_request/list.html:153
+msgid "Showing"
+msgstr "Memperlihatkan"
+
+#: templates/donation_center/list.html:145 templates/help_request/list.html:153
+msgid "Page"
+msgstr "Halaman"
+
+#: templates/donation_center/list.html:145 templates/help_request/list.html:153
+msgid "of"
+msgstr "dari"
+
+#: templates/donation_center/list.html:148 templates/help_request/list.html:156
+#: templates/includes/nav_paginator_controls.html:9
+#: templates/includes/nav_paginator_controls.html:11
+msgid "Previous"
+msgstr "Sebelumnya"
+
+#: templates/donation_center/list.html:149 templates/help_request/list.html:157
+#: templates/includes/nav_paginator_controls.html:16
+#: templates/includes/nav_paginator_controls.html:18
+msgid "Next"
+msgstr "Setelahnya"
+
 #: templates/footer/contact_us.html:11 templates/footer/general_faq.html:11
 #: templates/footer/legal.html:12 templates/giver/info.html:11
-#: templates/help_request/create.html:13 templates/help_request/info.html:11
-#: templates/help_request/list.html:16
+#: templates/help_request/create.html:13 templates/help_request/details.html:21
+#: templates/help_request/info.html:11 templates/help_request/list.html:16
 msgid "Home"
 msgstr "Beranda"
 
@@ -292,24 +382,6 @@ msgstr "Informasi Bantuan"
 msgid "Important"
 msgstr "Informasi Penting"
 
-#: templates/giver/info.html:28 templates/help_request/info.html:27
-#, python-format
-msgid
-"This is a citizen platform that depends totally on the good will of the "
-"people. There are no guarantees of help yes or yes. The information that one "
-"uploads will be 100%% publicly accessible."
-msgstr
-"BantuNusantara adalah platform yang sepenuhnya bergantung pada niat baik "
-"penggunanya. Tak ada jaminan bantuan akan datang. "
-"BantuNusantara tidak menghimpun donasi. Bantuan diberikan langsung "
-"oleh pemberi bantuan ke orang yang membutuhkan dan pelantar "
-"ini hanya menjembatani informasi saja. "
-"Data yang kamu unggah 100%% dapat diakses secara publik."
-
-#: templates/giver/info.html:33 templates/help_request/info.html:31
-msgid "More Information"
-msgstr "Informasi lebih lanjut"
-
 #: templates/giver/info.html:36 templates/help_request/info.html:34
 msgid "How does it work"
 msgstr "Bagaimana BantuNusantara bekerja"
@@ -349,11 +421,11 @@ msgstr "Klik di sini, kami akan mencoba menemukan lokasimu"
 msgid "Send"
 msgstr "Kirim"
 
-#: templates/help_request/create.html:44
+#: templates/help_request/create.html:45
 msgid "Map instructions"
 msgstr "Peta Indonesia"
 
-#: templates/help_request/create.html:49
+#: templates/help_request/create.html:50
 #, python-format
 msgid ""
 "Move the map to your location and then click on the %(icon)s icon to mark "
@@ -362,7 +434,7 @@ msgstr ""
 "Arahkan peta kepada lokasi kamu dan klik %(icon)s untuk menandai lokasi kamu "
 "di peta."
 
-#: templates/help_request/create.html:54
+#: templates/help_request/create.html:55
 #, python-format
 msgid ""
 "If you make a mistake, you can click on the %(icon)s icon to move the "
@@ -371,70 +443,96 @@ msgstr ""
 "Jika membuat kesalahan, klik %(icon)s untuk mengarahkan Jika sudah benar, "
 "klik 'Save'."
 
-#: templates/help_request/create.html:61
+#: templates/help_request/create.html:62
 msgid "Ok"
 msgstr "Ok"
 
-#: templates/help_request/create.html:77
+#: templates/help_request/create.html:78
 msgid "Area"
 msgstr "Area"
 
-#: templates/help_request/create.html:78
+#: templates/help_request/create.html:79
+#: templates/help_request/details.html:121
 msgid "City"
 msgstr "Kota"
 
-#: templates/help_request/create.html:79
+#: templates/help_request/create.html:80
 msgid "State"
 msgstr "Provinsi"
 
-#: templates/help_request/create.html:106
+#: templates/help_request/create.html:107
 msgid "Your location"
 msgstr "Lokasi kamu"
 
-#: templates/help_request/create.html:107
+#: templates/help_request/create.html:108
 msgid "Move this marker to your location"
 msgstr "Pindahkan ke lokasi kamu"
 
 # masi belum
-#: templates/help_request/create.html:121
+#: templates/help_request/create.html:122
 msgid "Found you!"
 msgstr "Kami menemukan lokasi kamu!"
 
 # masi belum
-#: templates/help_request/create.html:134
+#: templates/help_request/create.html:133
 msgid "Did not find you!"
 msgstr "Kami tidak menemukan lokasi kamu!"
 
 # masi belum
-#: templates/help_request/create.html:136
+#: templates/help_request/create.html:135
 msgid "Can not find you, move the marker further below."
 msgstr "Kami tidak menemukan lokasi kamu, arahkan penanda."
 
-#: templates/help_request/create.html:143
+#: templates/help_request/create.html:142
 msgid "Your browser does not support geolocation"
 msgstr "browser kamu mendukung geolokasi"
 
-#: templates/help_request/create.html:145
+#: templates/help_request/create.html:144
 msgid "Searching your location…"
 msgstr "Mencari lokasi kamu…"
 
-#: templates/help_request/list.html:20
+#: templates/help_request/details.html:5 templates/help_request/details.html:7
+#: templates/help_request/details.html:26
+#: templates/help_request/details.html:46
+msgid "Request"
+msgstr "Permintaan"
+
+#: templates/help_request/details.html:25 templates/help_request/list.html:20
 msgid "Help Requests"
 msgstr "Permohonan bantuan"
+
+#: templates/help_request/details.html:101
+msgid "Name"
+msgstr "Nama"
+
+#: templates/help_request/details.html:133
+msgid "Maps credited to Google Maps"
+msgstr "Peta dari Google Maps"
+
+#: templates/help_request/details.html:178
+msgid "You can share this order by clicking on the buttons"
+msgstr ""
 
 #: templates/help_request/list.html:27
 msgid "Nearby Requests"
 msgstr ""
 
+#: templates/help_request/list.html:43
+msgid "Select city..."
+msgstr ""
+
 #: templates/help_request/list.html:45
 msgid "If you don't see your city it is because there are no request"
-msgstr "Jika kamu tidak melihat kota yang kamu cari artinya tidak ada permohonan "
+msgstr ""
+"Jika kamu tidak melihat kota yang kamu cari artinya tidak ada permohonan "
 
 #: templates/help_request/list.html:71
-#, fuzzy
-#| msgid "Location"
 msgid "My Location"
 msgstr "Lokasi saya"
+
+#: templates/help_request/list.html:88
+msgid "Search by title or description, Example: Diaper"
+msgstr ""
 
 #: templates/help_request/list.html:93
 msgid "Search"

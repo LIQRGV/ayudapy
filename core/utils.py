@@ -2,6 +2,7 @@ import logging
 import os
 import time
 import base64
+from django.utils.translation import gettext as _
 
 from os import path
 from io import BytesIO
@@ -39,19 +40,19 @@ def create_thumbnail(imagepath: str, basewidth: int, force=False) -> bool:
 
 
 def rename_img(instance, filename):  # TODO: Use f'strings' instead of % format
-    path = "pedidos/"
+    request_path = _('request') + "/"
     filename = filename.replace(" ", "_")
     if not instance.phone:
-        format = time.strftime("%Y%m%d%H%M", time.localtime()) + "-" + filename
+        phone_format = time.strftime("%Y%m%d%H%M", time.localtime()) + "-" + filename
     else:
-        format = (
+        phone_format = (
             str(instance.phone)
             + "_"
             + time.strftime(f"%Y%m%d%H%M", time.localtime())
             + "_"
             + filename
         )
-    return os.path.join(path, format)
+    return os.path.join(request_path, phone_format)
 
 
 def text_to_image(text, width, height) -> Image:

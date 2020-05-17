@@ -13,7 +13,7 @@
             <span>{% trans "Home" %}</span>
           </a>
         </li>
-        <li><a href="/recibir">{% trans "Information" %}</a></li>
+        <li><a href={% url "help_request" %}>{% trans "Information" %}</a></li>
         <li class="is-active"><a href="#" aria-current="page">{% trans "Receive help" %}</a></li>
     </ul>
 </nav>
@@ -21,14 +21,14 @@
 {% block content%}
 <div class="columns is-centered"> 
     <div class="column is-half">
-      <button href="#" id="find-me" class="button is-success  is-outlined is-fullwidth" style="margin-bottom: 10px;">
+      <button href="#" id="find-me" class="button is-success  is-outlined is-fullwidth" style="margin-bottom: 10px;white-space: normal;height: max-content;">
         <span class="icon is-small">
           <i class="fas fa-location-arrow"></i>
         </span>
         <span>{% trans "Click here and I will try to find you" %}</span>
       </button>
       <p id="status"></p>
-      <form enctype="multipart/form-data" method="post" action="/solicitar">
+      <form enctype="multipart/form-data" method="post" action={% url "request-form" %}>
         {% csrf_token %}
         {% include 'help_request/post.html' with form=form %}
         <div class="control">
@@ -126,10 +126,8 @@
     }
 
     function error() {
-      
-      // Punto 0 = Panteon de los heroes
-      const latitude  = -25.282077;
-      const longitude = -57.635131;
+      const latitude  = -6.2;
+      const longitude = 106.816666;
 
       boton.textContent = '{% trans "Did not find you!" %}';
       boton.disabled = true;

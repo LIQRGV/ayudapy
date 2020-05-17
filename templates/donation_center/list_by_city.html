@@ -22,7 +22,7 @@
   Centros de donación en {{city}}
 </div>
 <div class="subtitle center">
-    <a href="/donaciones"> (ver todos)</a>
+    <a href="{% url "donations" %}"> (ver todos)</a>
 </div>
 {% if not list_donations %}
 <div class="notification is-warning center is-size-5">
@@ -51,7 +51,7 @@
           <div style="overflow-y:auto;max-height:75vh;padding:15px;">
             {% for donation in list_paginated %}
               <div class="media">
-                <a href="/donaciones/{{donation.id}}" class="has-text-grey-dark" title="{{donation.added}}">
+                <a href="{% url "donations" %}/{{donation.id}}" class="has-text-grey-dark" title="{{donation.added}}">
                   <div class="media-content">
                     <div class="content">
                       <p>
@@ -138,9 +138,9 @@
         var markerClusters = L.markerClusterGroup();
         var layerGroup = L.geoJSON(data, {
           onEachFeature: function (feature, layer) {
-            var popup = '<a class="subtitle" href="/donaciones/' + feature.properties.pk + '"><h1>Centro #' + feature.properties.pk +
+            var popup = '<a class="subtitle" href="{% url "donations" %}/' + feature.properties.pk + '"><h1>Centro #' + feature.properties.pk +
               '</h1></a><p class="has-text-weight-bold">Nombre: ' + feature.properties.name + '</p>' +
-              '<a class="is-size-6" href="/donaciones/' + feature.properties.pk + '">Ver Centro</a>';
+              '<a class="is-size-6" href="{% url "donations" %}/' + feature.properties.pk + '">Ver Centro</a>';
             layer.bindPopup(popup);
 
             markerClusters.addLayer(layer);
@@ -154,9 +154,9 @@
         console.log("loadMarkers");
         var layerGroup = L.geoJSON(data, {
           onEachFeature: function (feature, layer) {
-            var popup = '<a class="subtitle" href="/donaciones/' + feature.properties.pk + '"><h1>Centro #' + feature.properties.pk +
+            var popup = '<a class="subtitle" href="{% url "donations" %}/' + feature.properties.pk + '"><h1>Centro #' + feature.properties.pk +
               '</h1></a><p class="has-text-weight-bold">Nombre: ' + feature.properties.name + '</p><p>' +
-              '<a class="is-size-6" href="/donaciones/' + feature.properties.pk + '">Ver Centro</a>';
+              '<a class="is-size-6" href="{% url "donations" %}/' + feature.properties.pk + '">Ver Centro</a>';
             layer.bindPopup(popup);
           }
         }).addTo(map);

@@ -7,6 +7,7 @@ from django.shortcuts import (
     render,
     get_object_or_404,
 )
+from django.utils.translation import gettext as _
 
 from urllib.parse import quote_plus
 import json
@@ -54,7 +55,7 @@ def request_form(request):
                 print(str(e))
 
             messages.success(request, "¡Se creó tu pedido exitosamente!")
-            return redirect("pedidos-detail", id=new_help_request.id)
+            return redirect("request-detail", id=new_help_request.id)
     else:
         form = HelpRequestForm()
 
@@ -89,7 +90,7 @@ def view_request(request, id):
         "phone_number_img": image_to_base64(text_to_image(help_request.phone, 300, 50)),
         "whatsapp": '595'+help_request.phone[1:]+'?text=Hola+'+help_request.name
                     + ',+te+escribo+por+el+pedido+que+hiciste:+'+quote_plus(help_request.title)
-                    + '+https:'+'/'+'/'+'BantuNusantara.org/pedidos/'+help_request.id.__str__(),
+                    + '+https:'+'/'+'/'+'BantuNusantara.org/' + _('request') + '/'+help_request.id.__str__(),
         "active_requests": active_requests,
     }
     if request.POST:

@@ -118,7 +118,7 @@
 <script type="text/template" id="table-template">
       {% verbatim %}
 	<div class="media">
-	    <a href="/donaciones/{{id}}" class="has-text-grey-dark" title="{{added}}">
+	    <a href="{% url "donations" %}/{{id}}" class="has-text-grey-dark" title="{{added}}">
 	      <div class="media-content">
 		<div class="content">
 		  <p>

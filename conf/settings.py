@@ -146,7 +146,7 @@ MEDIA_URL = '/media/'
 
 
 LEAFLET_CONFIG = {
-    'DEFAULT_CENTER': (-25.292, -57.551),
+    'DEFAULT_CENTER': (-6.2, 106.816666),
     'DEFAULT_ZOOM': 11,
     'MIN_ZOOM': 3,
     'MAX_ZOOM': 18,

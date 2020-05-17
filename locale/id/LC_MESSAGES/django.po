@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-17 17:23+0800\n"
+"POT-Creation-Date: 2020-05-17 18:59+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -494,12 +494,42 @@ msgstr "Mencari lokasi kamu…"
 #: templates/help_request/details.html:5 templates/help_request/details.html:7
 #: templates/help_request/details.html:26
 #: templates/help_request/details.html:46
+#: templates/help_request/details.html:48
 msgid "Request"
 msgstr "Permintaan"
 
 #: templates/help_request/details.html:25 templates/help_request/list.html:20
 msgid "Help Requests"
 msgstr "Permohonan bantuan"
+
+#: templates/help_request/details.html:39
+#: templates/help_request/details.html:178
+msgid "You can share this order by clicking on the buttons"
+msgstr "Kamu dapat membagikan permohonan bantuan ini dengan klik tombol"
+
+#: templates/help_request/details.html:57
+msgid "Inactive order"
+msgstr ""
+
+#: templates/help_request/details.html:58
+msgid "Unsubscribed or repeated order, only 1 active order per phone number"
+msgstr ""
+
+#: templates/help_request/details.html:62
+msgid "We find this active order with the same number"
+msgstr ""
+
+#: templates/help_request/details.html:65
+msgid "Other active orders with same number"
+msgstr ""
+
+#: templates/help_request/details.html:75
+msgid "Order already resolved"
+msgstr ""
+
+#: templates/help_request/details.html:76
+msgid "The request for help has already been marked as assisted"
+msgstr ""
 
 #: templates/help_request/details.html:101
 msgid "Name"
@@ -508,10 +538,6 @@ msgstr "Nama"
 #: templates/help_request/details.html:133
 msgid "Maps credited to Google Maps"
 msgstr "Peta dari Google Maps"
-
-#: templates/help_request/details.html:178
-msgid "You can share this order by clicking on the buttons"
-msgstr "Kamu dapat membagikan permohonan bantuan ini dengan klik tombol"
 
 #: templates/help_request/list.html:27
 msgid "Nearby Requests"

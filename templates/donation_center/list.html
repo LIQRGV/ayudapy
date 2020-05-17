@@ -133,24 +133,21 @@
       {% endverbatim %}
     </script>
 
-<script type="text/template" id="table-empty-template">
-      {% verbatim %}
-	<div class="media">
-	    <h1>No se encuentran centros de donación en la ubicación actual.</h1>
-	</div>
-      {% endverbatim %}
+    <script type="text/template" id="table-empty-template">
+        <div class="media">
+            <h1>{% trans "No donation centers found at current location." %}</h1>
+        </div>
     </script>
 
     <script type="text/template" id="table-paginator-template">
-        {% verbatim %}
           <div class="row table-paginator">
               <div class="column is-5">
-                Mostrando &lt; Página {{currentPage}} de {{totalPages}} &gt;
+                {% trans "Showing" %} &lt; {% trans "Page" %} {% verbatim %} {{currentPage}} {% endverbatim %} {% trans "of" %} {% verbatim %} {{totalPages}} {% endverbatim %} &gt;
             </div>
             <nav class="pagination is-right" role="navigation" aria-label="pagination">
-                <button class="pagination-previous prev-button" {{hasPrev}}>Previo</button>
-                <button class="pagination-next next-button" {{hasNext}}>Siguiente</button>
-
+                <button class="pagination-previous prev-button" {% verbatim %}{{hasPrev}}{% endverbatim %}>{% trans "Previous" %}</button>
+                <button class="pagination-next next-button" {% verbatim %}{{hasNext}}{% endverbatim %}>{% trans "Next" %}</button>
+                {% verbatim %}
                 <ul class="pagination-list">
                     <li><button class="pagination-link first-button {{showFirst}}" {{hasFirst}}>1</button></li>
                     <li><span class="pagination-ellipsis {{showPrev}}">&hellip;</span></li>
@@ -160,8 +157,8 @@
                     <li><span class="pagination-ellipsis {{showNext}}">&hellip;</span></li>
                     <li><button class="pagination-link last-button {{showLast}}" {{hasLast}}>{{totalPages}}</button></li>
                 </ul>
+                {% endverbatim %}
           </nav>
           </div>
-        {% endverbatim %}
     </script>
 {% endblock %}

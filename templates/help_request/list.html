@@ -148,28 +148,27 @@
     </script>
 
     <script type="text/template" id="table-paginator-template">
-          {% verbatim %}
-        	<div class="row table-paginator">
-        	    <div class="column is-5">
-        		  Mostrando &lt; Página {{currentPage}} de {{totalPages}} &gt;
-              </div>
-              <nav class="pagination is-right" role="navigation" aria-label="pagination">
-                  <button class="pagination-previous prev-button" {{hasPrev}}>Previo</button>
-                  <button class="pagination-next next-button" {{hasNext}}>Siguiente</button>
-
-                  <ul class="pagination-list">
-                      <li><button class="pagination-link first-button {{showFirst}}" {{hasFirst}}>1</button></li>
-                      <li><span class="pagination-ellipsis {{showPrev}}">&hellip;</span></li>
-                      <li><button class="pagination-link current-minus-button {{showPrev}}">{{previousPage}} </button></li>
-                      <li><button class="pagination-link is-current">{{currentPage}} </button></li>
-                      <li><button class="pagination-link current-plus-button {{showNext}}">{{nextPage}} </button></li>
-                      <li><span class="pagination-ellipsis {{showNext}}">&hellip;</span></li>
-                      <li><button class="pagination-link last-button {{showLast}}" {{hasLast}}>{{totalPages}}</button></li>
-                  </ul>
-            </nav>
-        	</div>
-          {% endverbatim %}
-      </script>
+          <div class="row table-paginator">
+              <div class="column is-5">
+                {% trans "Showing" %} &lt; {% trans "Page" %} {% verbatim %} {{currentPage}} {% endverbatim %} {% trans "of" %} {% verbatim %} {{totalPages}} {% endverbatim %} &gt;
+            </div>
+            <nav class="pagination is-right" role="navigation" aria-label="pagination">
+                <button class="pagination-previous prev-button" {% verbatim %}{{hasPrev}}{% endverbatim %}>{% trans "Previous" %}</button>
+                <button class="pagination-next next-button" {% verbatim %}{{hasNext}}{% endverbatim %}>{% trans "Next" %}</button>
+                {% verbatim %}
+                <ul class="pagination-list">
+                    <li><button class="pagination-link first-button {{showFirst}}" {{hasFirst}}>1</button></li>
+                    <li><span class="pagination-ellipsis {{showPrev}}">&hellip;</span></li>
+                    <li><button class="pagination-link current-minus-button {{showPrev}}">{{previousPage}} </button></li>
+                    <li><button class="pagination-link is-current">{{currentPage}} </button></li>
+                    <li><button class="pagination-link current-plus-button {{showNext}}">{{nextPage}} </button></li>
+                    <li><span class="pagination-ellipsis {{showNext}}">&hellip;</span></li>
+                    <li><button class="pagination-link last-button {{showLast}}" {{hasLast}}>{{totalPages}}</button></li>
+                </ul>
+                {% endverbatim %}
+          </nav>
+          </div>
+    </script>
 
 
 {% endblock %}

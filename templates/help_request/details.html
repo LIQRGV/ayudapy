@@ -36,7 +36,7 @@
                 <button class="delete" onclick="document.getElementById('msg{{ forloop.counter }}').style.display = 'none';"></button>
                     <span class="is-5">{{ message }}</span>
                     <p><span class="icon is-medium"><i class="fas fa-hand-point-down"></i></span>
-                    Podés compartir tu pedido haciendo click en los botones</p>
+                    {% trans "You can share this order by clicking on the buttons" %}</p>
             {% include 'includes/share_buttons.html'%}
             </div>
         {% endfor %}
@@ -45,7 +45,7 @@
       {% if help_request.resolved %}
         <a class="has-text-primary" href="{% url "request" %}/{{help_request.id}}"><strike>{% trans "Request" %} #{{help_request.id}}</strike></a>
       {% else %}
-        <a class="has-text-primary" href="{% url "request" %}/{{help_request.id}}">Pedido #{{help_request.id}}</a>
+        <a class="has-text-primary" href="{% url "request" %}/{{help_request.id}}">{% trans "Request" %} #{{help_request.id}}</a>
       {% endif %}
         </div>
     </div>
@@ -54,15 +54,15 @@
     <div class="column is-four-fifths">
 {% if not help_request.active %}
       <div class="notification is-danger is-half" >
-        <span class="is-5"><p class="is-size-2">Pedido inactivo</p>
-          <p class="has-text-white-ter">Pedido dado de baja o repetido, solo 1 pedido activo por número de teléfono</p>
+        <span class="is-5"><p class="is-size-2">{% trans "Inactive order" %}</p>
+          <p class="has-text-white-ter">{% trans "Unsubscribed or repeated order, only 1 active order per phone number" %}</p>
         </span>
     </div>
     {% if active_requests %}
-    <p class="is-size-4">Pero encontramos este pedido activo con el mismo número: <li><a href="{% url "request" %}/{{ active_requests.0.id }}">#{{ active_requests.0.id }}</a></li> </p>
+    <p class="is-size-4">{% trans "We find this active order with the same number" %}: <li><a href="{% url "request" %}/{{ active_requests.0.id }}">#{{ active_requests.0.id }}</a></li> </p>
     
         {% if user.is_authenticated %}
-          Otros pedidos activos del mismo numero
+          {% trans "Other active orders with same number" %}
           {% for act in active_requests %}
           <li><a href="{% url "request" %}/{{ act.id }}">#{{ act.id }}</a></li>
           {% endfor %}
@@ -72,8 +72,8 @@
 {% else %}
       {% if help_request.resolved %}
       <div class="notification is-success is-half" >
-            <span class="is-5"><p class="is-size-2">¡Pedido ya resuelto!</p>
-              <p class="has-text-white-ter">El pedido de ayuda ya fue marcado como asistido</p>
+            <span class="is-5"><p class="is-size-2">{% trans "Order already resolved" %}</p>
+              <p class="has-text-white-ter">{% trans "The request for help has already been marked as assisted" %}</p>
             </span>
       </div>
       {% endif %}
@@ -107,12 +107,12 @@
                         <img src="data:image/jpeg;base64,{{phone_number_img}}">
                       </a>
                         &nbsp;
-                        <a href="https://wa.me/{{ whatsapp }}" target="_blank" class="button is-medium is-success is-outlined">
+                        <!-- <a href="https://wa.me/{{ whatsapp }}" target="_blank" class="button is-medium is-success is-outlined">
                             <span class="icon is-small">
                               <i class="fab fa-whatsapp"></i>
                             </span>
                             <span>Contactar vía WhatsApp</span>
-                        </a>
+                        </a> -->
                     </p>
                     {% if help_request.address %}
                       <p class="subtitle">{% trans "Address" %}:</p>
@@ -144,12 +144,12 @@
                     <p class="title is-4">{{ help_request.title}}</p>
                     <p class="subtitle">{{help_request.message|linebreaks}}</p>
                     <hr>
-                    <p class="subtitle">Nombre:</p>
+                    <p class="subtitle">{% trans "Name" %}:</p>
                     <p class="title is-4">{{ help_request.name}}</p>
-                    <p class="subtitle">Contacto:</p>
+                    <p class="subtitle">{% trans "Contact information" %}:</p>
                     <p class="title is-4"><a href="tel:{{help_request.phone}}">{{help_request.phone}}</p></a>
                     {% if help_request.address %}
-                      <p class="subtitle">Dirección:</p>
+                      <p class="subtitle">{% trans "Address" %}:</p>
                       <p class="title is-4">{{help_request.address}}</p>
                     {% endif %}
                     {% if help_request.picture %}
@@ -159,7 +159,7 @@
                         </a>
                       </figure>
                     {% endif %}
-                     <p class="subtitle">Ubicación:
+                     <p class="subtitle">{% trans "Location" %}:
                      {% leaflet_map "main" callback="main_map_init" %}
                      </p>
                      <a href="https://www.google.com/maps/search/?api=1&query={{help_request.location.y|unlocalize}},{{help_request.location.x|unlocalize}}" target="_blank">

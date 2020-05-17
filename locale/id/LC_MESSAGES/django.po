@@ -40,8 +40,8 @@ msgid ""
 "your home a good option may be the nearest police station or some other "
 "nearby public place."
 msgstr ""
-"Pilih lokasi anda supaya orang-orang bisa menemukan kamu, jika anda tidak "
-"ingin menandai rumah kamu, anda bisa menandai kantor polisi terdekat atau "
+"Pilih lokasi kamu supaya orang-orang bisa menemukan kamu, jika kamu tidak "
+"ingin menandai rumah kamu, kamu bisa menandai kantor polisi terdekat atau "
 "tempat publik terdekat lainnya."
 
 #: core/forms.py:42
@@ -88,7 +88,7 @@ msgstr "Nama Lengkap"
 
 #: core/models.py:83
 msgid "Telephone contact"
-msgstr "Telefon"
+msgstr "Telfon"
 
 #: core/models.py:85 templates/help_request/create.html:76
 msgid "Address"
@@ -111,7 +111,7 @@ msgid ""
 "In case you want you can attach a photo related to your request. It is "
 "optional but it can help people better understand your situation."
 msgstr ""
-"Jika kamu ingin melampirkan foto terkait situasi kamu, ini tidak wajin, "
+"Jika kamu ingin melampirkan foto terkait situasi kamu, ini tidak wajib, "
 "namun dapat membantu orang-orang untuk mengerti situasi kamu lebih jelas."
 
 #: core/models.py:110
@@ -136,7 +136,7 @@ msgstr "Kontak"
 
 #: templates/footer/contact_us.html:25
 msgid "Do you want to contact us?"
-msgstr "kamu mau menghubungi kami?"
+msgstr "Ingin menghubungi kami?"
 
 #: templates/footer/contact_us.html:27
 msgid "If you need help, click here."
@@ -290,18 +290,21 @@ msgstr "Informasi Bantuan"
 
 #: templates/giver/info.html:26 templates/help_request/info.html:24
 msgid "Important"
-msgstr "Penting"
+msgstr "Informasi Penting"
 
 #: templates/giver/info.html:28 templates/help_request/info.html:27
 #, python-format
-msgid ""
+msgid
 "This is a citizen platform that depends totally on the good will of the "
 "people. There are no guarantees of help yes or yes. The information that one "
 "uploads will be 100%% publicly accessible."
-msgstr ""
+msgstr
 "BantuNusantara adalah platform yang sepenuhnya bergantung pada niat baik "
-"penggunanya. Tak ada jaminan bantuan akan datang. Data yang kamu unggah "
-"100%% dapat diakses secara publik."
+"penggunanya. Tak ada jaminan bantuan akan datang. "
+"BantuNusantara tidak menghimpun donasi. Bantuan diberikan langsung "
+"oleh pemberi bantuan ke orang yang membutuhkan dan pelantar "
+"ini hanya menjembatani informasi saja. "
+"Data yang kamu unggah 100%% dapat diakses secara publik."
 
 #: templates/giver/info.html:33 templates/help_request/info.html:31
 msgid "More Information"
@@ -315,7 +318,7 @@ msgstr "Bagaimana BantuNusantara bekerja"
 msgid ""
 "You have to upload your data: name, contact phone, city, location and what "
 "you need."
-msgstr "kamu harus mengunggah: nama, telefon, kota, lokasi dan kebutuhanmu."
+msgstr "kamu harus mengunggah: nama, Telfon, kota, lokasi dan kebutuhanmu."
 
 #: templates/giver/info.html:44 templates/help_request/info.html:40
 msgid ""
@@ -323,12 +326,12 @@ msgid ""
 "well as offering people who want to help an interface to find those who need "
 "it."
 msgstr ""
-"membantu kamu untuk membagikan informasi kebutuhanmu supaya orang-orang dapat melihat "
-"dan juga membantu orang-orang yang ingin berbagi untuk membantu orang yang membutuhkan "
+"akan membantu kamu untuk menampilkan permohonan bantuan kamu sehingga "
+"pemberi bantuan dapat mengetahui orang yang perlu dibantu di sekitar mereka "
 
 #: templates/giver/info.html:53 templates/help_request/info.html:49
 msgid "OK I understand, I want to continue"
-msgstr "OK Saya mengerti, Saya ingin melanjutkan"
+msgstr "OK saya mengerti, saya ingin melanjutkan"
 
 #: templates/help_request/create.html:16
 msgid "Information"
@@ -340,7 +343,7 @@ msgstr "Butuh Bantuan"
 
 #: templates/help_request/create.html:28
 msgid "Click here and I will try to find you"
-msgstr "Klik di sini, kami akan mencoba menemukan Anda"
+msgstr "Klik di sini, kami akan mencoba menemukan lokasimu"
 
 #: templates/help_request/create.html:35
 msgid "Send"
@@ -390,7 +393,7 @@ msgstr "Lokasi kamu"
 
 #: templates/help_request/create.html:107
 msgid "Move this marker to your location"
-msgstr "Tandai lokasi kamu"
+msgstr "Pindahkan ke lokasi kamu"
 
 # masi belum
 #: templates/help_request/create.html:121
@@ -417,7 +420,7 @@ msgstr "Mencari lokasi kamu…"
 
 #: templates/help_request/list.html:20
 msgid "Help Requests"
-msgstr ""
+msgstr "Permohonan bantuan"
 
 #: templates/help_request/list.html:27
 msgid "Nearby Requests"
@@ -425,38 +428,38 @@ msgstr ""
 
 #: templates/help_request/list.html:45
 msgid "If you don't see your city it is because there are no request"
-msgstr ""
+msgstr "Jika kamu tidak melihat kota yang kamu cari artinya tidak ada permohonan "
 
 #: templates/help_request/list.html:71
 #, fuzzy
 #| msgid "Location"
 msgid "My Location"
-msgstr "Lokasi"
+msgstr "Lokasi saya"
 
 #: templates/help_request/list.html:93
 msgid "Search"
-msgstr ""
+msgstr "Cari"
 
 #: templates/help_request/list.html:104
 msgid "Last Request For Help"
-msgstr ""
+msgstr "Permohonan bantuan terbaru"
 
 #: templates/help_request/list.html:146
 msgid "No requests for help found at current location."
-msgstr ""
+msgstr "Tidak ditemukan permohonan bantuan di lokasi kamu"
 
 #: templates/help_request/post.html:38
 msgid "Request category*"
-msgstr "Kategori permintaan"
+msgstr "Kategori kebutuhan"
 
 #: templates/help_request/post.html:39
 msgid ""
 "Chose the categories of your request (you can select more than one category)"
-msgstr "Pilih kategori permintaanmu (kamu bisa memilih lebih dari 1)"
+msgstr "Pilih kategori kebutuhanmu (kamu bisa memilih lebih dari 1)"
 
 #: templates/help_request/post.html:49
 msgid "Provisions"
-msgstr ""
+msgstr "Bahan Makanan"
 
 #: templates/help_request/post.html:61
 msgid "Babies"
@@ -480,7 +483,7 @@ msgstr "Saya butuh bantuan!"
 
 #: templates/home.html:12
 msgid "Post your request for people to see it"
-msgstr "Unggah permintaanmu supaya orang-orang dapat melihat"
+msgstr "Beri tahu bantuan yang kamu butuhkan"
 
 #: templates/home.html:19 templates/home.html:50
 msgid "I want to help!"

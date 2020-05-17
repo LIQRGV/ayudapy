@@ -40,7 +40,7 @@
                     <div class="field">
                       <div class="control">
                         <div class="select is-small">
-                          <input name="cities" class="input is-small" list="list_cities" placeholder="Seleccionar ciudad..." autocomplete="off">
+                          <input name="cities" class="input is-small" list="list_cities" placeholder={% trans "Select city..." %}autocomplete="off">
                         </div>
                           <p class="help has-text-info">{% trans "If you don't see your city it is because there are no request" %}</p>
                       </div>
@@ -85,7 +85,7 @@
 		class="input is-small"
 		type="text"
 		name="search-text-field"
-		placeholder="Búsqueda por título o descripción, Ejemplo: Pañal"
+		placeholder={% trans "Search by title or description, Example: Diaper" %}
 	      >
 	    </div>
 	    <div class="control" >
@@ -148,14 +148,14 @@
     </script>
 
     <script type="text/template" id="table-paginator-template">
-          {% verbatim %}
+          
         	<div class="row table-paginator">
         	    <div class="column is-5">
-        		  Mostrando &lt; Página {{currentPage}} de {{totalPages}} &gt;
+        		  {% trans "Showing" %} &lt; {% trans "Page" %}  {%verbatim %} {{currentPage}} {% endverbatim %} {% trans "of" %} {%verbatim %} {{totalPages}}  {% endverbatim %} &gt;
               </div>
               <nav class="pagination is-right" role="navigation" aria-label="pagination">
-                  <button class="pagination-previous prev-button" {{hasPrev}}>Previo</button>
-                  <button class="pagination-next next-button" {{hasNext}}>Siguiente</button>
+                  <button class="pagination-previous prev-button" {{hasPrev}}>{% trans "Previous" %}</button>
+                  <button class="pagination-next next-button" {{hasNext}}>{% trans "Next" %}</button>
 
                   <ul class="pagination-list">
                       <li><button class="pagination-link first-button {{showFirst}}" {{hasFirst}}>1</button></li>

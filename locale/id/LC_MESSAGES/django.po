@@ -390,7 +390,7 @@ msgstr "Bagaimana BantuNusantara bekerja"
 msgid ""
 "You have to upload your data: name, contact phone, city, location and what "
 "you need."
-msgstr "kamu harus mengunggah: nama, Telfon, kota, lokasi dan kebutuhanmu."
+msgstr "kamu harus mengunggah: nama, telfon, kota, lokasi dan kebutuhanmu."
 
 #: templates/giver/info.html:44 templates/help_request/info.html:40
 msgid ""
@@ -509,27 +509,27 @@ msgstr "Kamu dapat membagikan permohonan bantuan ini dengan klik tombol"
 
 #: templates/help_request/details.html:57
 msgid "Inactive order"
-msgstr ""
+msgstr "Permohonan bantuan non-aktif"
 
 #: templates/help_request/details.html:58
 msgid "Unsubscribed or repeated order, only 1 active order per phone number"
-msgstr ""
+msgstr "Permohonan bantuan yang sama terulang, hanya diijinkan 1 permohonan per nomor telfon"
 
 #: templates/help_request/details.html:62
 msgid "We find this active order with the same number"
-msgstr ""
+msgstr "Ditemukan permohonan bantuan aktif dengan nomor telfon yang sama"
 
 #: templates/help_request/details.html:65
 msgid "Other active orders with same number"
-msgstr ""
+msgstr "permohonan bantuan lainnya dari nomor telfon yang sama"
 
 #: templates/help_request/details.html:75
 msgid "Order already resolved"
-msgstr ""
+msgstr "Permohonan bantuan telah selesai dibantu"
 
 #: templates/help_request/details.html:76
 msgid "The request for help has already been marked as assisted"
-msgstr ""
+msgstr "Permohonan bantuan selesai ditandai 'telah dibantu'"
 
 #: templates/help_request/details.html:101
 msgid "Name"
@@ -583,7 +583,7 @@ msgstr "Pilih kategori kebutuhanmu (kamu bisa memilih lebih dari 1)"
 
 #: templates/help_request/post.html:49
 msgid "Provisions"
-msgstr "Bahan Makanan"
+msgstr "Bahan makanan"
 
 #: templates/help_request/post.html:61
 msgid "Babies"

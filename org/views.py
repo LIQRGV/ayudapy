@@ -6,6 +6,7 @@ from django.shortcuts import (
     render,
     get_object_or_404,
 )
+from django.utils.translation import gettext as _
 # from django.contrib.auth.decorators import login_required
 
 from .forms import DonationForm
@@ -46,7 +47,7 @@ def view_donation_center(request, id):
         "phone_number_img": image_to_base64(text_to_image(donation_center.phone, 300, 50)) if donation_center.phone else None,
         "whatsapp": '595'+donation_center.phone[1:]+'?text=Hola+'+donation_center.name
                     + ',+te+escribo+por+el+anuncio+de+donación+que+hiciste:+'
-                    + '+https:'+'/'+'/'+'BantuNusantara.org/donaciones/'+donation_center.id.__str__() if donation_center.phone else None,
+                    + '+https:'+'/'+'/'+'BantuNusantara.org/' + _('donations') + '/'+donation_center.id.__str__() if donation_center.phone else None,
     }
 
     return render(request, "donation_center/details.html", context)

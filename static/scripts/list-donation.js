@@ -128,11 +128,11 @@
       you = L.marker([latitude, longitude], {
         opacity: 0.8,
         icon: greenIcon,
-        title: 'Tu ubicación',
+        title: 'Your location',
       }).addTo(maps[0]);
       you.bindPopup('<b>Tu ubicación</b>').openPopup();
       maps[0].panTo(new L.LatLng(latitude, longitude), 14);
-      status.textContent = 'Mostrando tu localización actual';
+      status.textContent = 'Showing your current location';
     }
 
     function error() {

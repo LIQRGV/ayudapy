@@ -73,11 +73,11 @@
         .then((data) => {
           const direccion = data.data;
 
-          document.getElementById('div_direccion').innerHTML = `
-          <span><b>{% trans "Address" %}</b>:${direccion.direccion || ''}</span><br /> 
-          <span><b>{% trans "Area" %}</b>:${direccion.localidad || '' }</span><br /> 
-          <span><b>{% trans "City" %}</b>:${direccion.distrito || ''} </span>
-	  <span><b>{% trans "State" %}</b>:${direccion.departamento || ''}</span>`;
+          // document.getElementById('div_direccion').innerHTML = `
+          //<span><b>{% trans "Address" %}</b>:${direccion.direccion || ''}</span><br />
+          //<span><b>{% trans "Area" %}</b>:${direccion.localidad || '' }</span><br />
+          //<span><b>{% trans "City" %}</b>:${direccion.distrito || ''} </span>
+	      //<span><b>{% trans "State" %}</b>:${direccion.departamento || ''}</span>`;
           document.getElementById('id_address').value = `${direccion.direccion || ''} ${direccion.localidad || '' } ${direccion.distrito || ''} ${direccion.departamento || ''}`;
           resolve(true)
         })

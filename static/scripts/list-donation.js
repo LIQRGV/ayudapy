@@ -130,7 +130,7 @@
         icon: greenIcon,
         title: 'Your location',
       }).addTo(maps[0]);
-      you.bindPopup('<b>Tu ubicación</b>').openPopup();
+      you.bindPopup('<b>Your location</b>').openPopup();
       maps[0].panTo(new L.LatLng(latitude, longitude), 14);
       status.textContent = 'Showing your current location';
     }

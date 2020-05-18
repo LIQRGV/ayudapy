@@ -141,7 +141,7 @@ msgid ""
 "help"
 msgstr ""
 "Untuk memudahkan orang yang ingin membantu kamu, jelaskan alamat, kota, RT/"
-"RW, penanda jalan, ataucara menuju ke sana"
+"RW, penanda jalan, atau cara menuju ke sana"
 
 #: core/models.py:102
 msgid "Photo"
@@ -174,7 +174,7 @@ msgstr ""
 "BantuNusantara adalah platform yang sepenuhnya bergantung pada niat baik "
 "penggunanya. Tak ada jaminan bantuan akan datang. BantuNusantara tidak "
 "menghimpun donasi. Bantuan diberikan langsung oleh pemberi bantuan ke orang "
-"yang membutuhkan dan pelantar ini hanya menjembatani informasi saja. Data "
+"yang membutuhkan dan platform ini hanya menjembatani informasi saja. Data "
 "yang kamu unggah 100%% dapat diakses secara publik."
 
 #: templates/donation_center/info.html:32 templates/giver/info.html:33
@@ -496,7 +496,7 @@ msgstr "Mencari lokasi kamu…"
 #: templates/help_request/details.html:46
 #: templates/help_request/details.html:48
 msgid "Request"
-msgstr "Permintaan"
+msgstr "Permohonan Bantuan"
 
 #: templates/help_request/details.html:25 templates/help_request/list.html:20
 msgid "Help Requests"

@@ -47,7 +47,7 @@ msgstr "bantuan"
 
 #: conf/urls.py:32 templates/help_request/details.html:123
 msgid "request_city"
-msgstr "kota_permintaan"
+msgstr "kota_permohonan"
 
 #: conf/urls.py:37 conf/urls.py:39 org/views.py:50
 msgid "donations"
@@ -80,9 +80,9 @@ msgid ""
 "your home a good option may be the nearest police station or some other "
 "nearby public place."
 msgstr ""
-"Pilih lokasi kamu supaya orang-orang bisa menemukan kamu, jika kamu tidak "
-"ingin menandai rumah kamu, kamu bisa menandai kantor polisi terdekat atau "
-"tempat publik terdekat lainnya."
+"Plih lokasi sehingga kamu mudah ditemui, jika kamu tidak "
+"ingin menandai rumah pribadi, kamu bisa memilih tempat umum terdekat "
+"(minimarket, kantor polisi, dll)."
 
 #: core/forms.py:42
 msgid "Example: I urgently need food for my family"
@@ -99,12 +99,12 @@ msgstr ""
 #: core/forms.py:59
 msgid "Registration already entered, cannot duplicate the same request."
 msgstr ""
-"Permintaan kamu sudah terdaftar, tidak bisa mendaftar lagi untuk permintaan "
+"Permohonan kamu sudah terdaftar, tidak bisa mendaftar lagi untuk permohonan "
 "sejenis."
 
 #: core/models.py:69
 msgid "Request title"
-msgstr "Judul Permintaan"
+msgstr "Judul Permohonan"
 
 #: core/models.py:71
 msgid "Short description of what you need"
@@ -112,15 +112,15 @@ msgstr "Jelaskan secara singkat kebutuhanmu "
 
 #: core/models.py:75
 msgid "Request Description"
-msgstr "Deskripsi Permintaan"
+msgstr "Deskripsi Permohonan"
 
 #: core/models.py:77
 msgid ""
 "Here you can tell in detail what you need, <b> the better you tell your "
 "situation the more likely they want to help you </b>"
 msgstr ""
-"Jelaskan secara rinci kebutuhanmu, <b> semakin jelas keadaanmu semakin besar "
-"kemungkinan orang-orang ingin membantu kamu</b>"
+"Di sini kamu dapat memberi tahu secara rinci kebutuhanmu, <b> semakin detail deskripsinya, "
+"semakin berpeluang kamu untuk dibantu</b>"
 
 #: core/models.py:82
 msgid "Name and surname"
@@ -152,8 +152,8 @@ msgid ""
 "In case you want you can attach a photo related to your request. It is "
 "optional but it can help people better understand your situation."
 msgstr ""
-"Jika kamu ingin melampirkan foto terkait situasi kamu, ini tidak wajib, "
-"namun dapat membantu orang-orang untuk mengerti situasi kamu lebih jelas."
+"Jika mau, kamu dapat melampirkan foto terkait permohonan bantuan kamu. "
+"Kamu tidak wajib melakukannya, tetapi ini akan memudahkan orang lain memahami situasi kamu."
 
 #: core/models.py:110
 msgid "Added"
@@ -390,7 +390,7 @@ msgstr "Bagaimana BantuNusantara bekerja"
 msgid ""
 "You have to upload your data: name, contact phone, city, location and what "
 "you need."
-msgstr "kamu harus mengunggah: nama, telfon, kota, lokasi dan kebutuhanmu."
+msgstr "mohong unggah: nama, telfon, kota, lokasi dan kebutuhanmu."
 
 #: templates/giver/info.html:44 templates/help_request/info.html:40
 msgid ""
@@ -550,7 +550,7 @@ msgstr "Pilih kota..."
 #: templates/help_request/list.html:45
 msgid "If you don't see your city it is because there are no request"
 msgstr ""
-"Jika kamu tidak melihat kota yang kamu cari artinya tidak ada permohonan "
+"Jika kamu tidak melihat kota yang kamu cari artinya tidak ada permohonan bantuan di sana."
 
 #: templates/help_request/list.html:71
 msgid "My Location"
@@ -649,7 +649,7 @@ msgstr "Statistik"
 
 #: templates/stats/dashboard.html:26
 msgid "Requests summary"
-msgstr "Rangkuman Permintaan"
+msgstr "Rangkuman Permohonan"
 
 #: templates/stats/dashboard.html:30
 msgid "Active"
@@ -675,7 +675,7 @@ msgstr "Kemarin"
 #, fuzzy
 #| msgid "Request category*"
 msgid "Requests per day"
-msgstr "Permintaan per hari"
+msgstr "Permohonan per hari"
 
 #: templates/stats/dashboard.html:66
 msgid "Period"

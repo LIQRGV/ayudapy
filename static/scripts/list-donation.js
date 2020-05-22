@@ -1,9 +1,9 @@
 // script to support the templates/donation_center/list.html file
 (function () {
   var GEO_URL = "/api/v1/donationcentersgeo/";
-  var LIST_URL = "/donaciones/";
-  var LIST_BY_CITY_URL = "/donaciones_ciudad/";
-  var TITLE = "Donación";
+  var LIST_URL = "/donations/";
+  var LIST_BY_CITY_URL = "/donasi_berdasarkan_kota/";
+  var TITLE = "Donasi";
 
   /**
    * ListRequestView is the main component of the list.html page.
@@ -136,13 +136,13 @@
     }
 
     function error() {
-      status.textContent = 'No puedo encontrarte, usá los botones del mapa';
+      status.textContent = 'Lokasi kamu tidak ditemukan, gunakan tombol pada peta';
     }
 
     if (!navigator.geolocation) {
-      status.textContent = 'Tu navegador no soporta la geolocalización';
+      status.textContent = 'Browser anda tidak mendukung geolokasi';
     } else {
-      status.textContent = 'Buscando tu ubicación…';
+      status.textContent = 'Mencari lokasi kamu…';
       navigator.geolocation.getCurrentPosition(success, error);
     }
   }

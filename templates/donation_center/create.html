@@ -107,13 +107,13 @@
     }
 
     function error() {
-      status.textContent = 'No puedo encontrarte, usá los botones del mapa más abajo';
+      status.textContent = 'Lokasi kamu tidak ditemukan, gunakan tombol pada peta';
     }
 
     if (!navigator.geolocation) {
-      status.textContent = 'Tu navegador no soporta la geolocalización';
+      status.textContent = 'Browser anda tidak mendukung geolokasi';
     } else {
-      status.textContent = 'Buscando tu ubicación…';
+      status.textContent = 'Mencari lokasi kamu…';
       navigator.geolocation.getCurrentPosition(success, error);
     }
 

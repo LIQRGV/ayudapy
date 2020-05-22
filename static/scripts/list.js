@@ -1,9 +1,9 @@
 // script to support the templates/help_request/list.html file
 (function () {
   var GEO_URL = "/api/v1/helprequestsgeo/";
-  var LIST_URL = "/pedidos/";
-  var LIST_BY_CITY_URL = "/pedidos_ciudad/";
-  var TITLE = "Pedido";
+  var LIST_URL = "/bantuan/";
+  var LIST_BY_CITY_URL = "/kota_permohonan/";
+  var TITLE = "Bantuan";
   var ICON_URL = "/static/icons/marker-icon-2x-green.png";
   
   /**
@@ -138,13 +138,13 @@
     }
 
     function error() {
-      status.textContent = 'No puedo encontrarte, usá los botones del mapa';
+      status.textContent = 'Lokasi kamu tidak ditemukan, gunakan tombol pada peta';
     }
 
     if (!navigator.geolocation) {
-      status.textContent = 'Tu navegador no soporta la geolocalización';
+      status.textContent = 'Browser anda tidak mendukung geolokasi';
     } else {
-      status.textContent = 'Buscando tu ubicación…';
+      status.textContent = 'Mencari lokasi kamu…';
       navigator.geolocation.getCurrentPosition(success, error);
     }
   }

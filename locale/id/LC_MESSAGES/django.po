@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-17 18:59+0800\n"
+"POT-Creation-Date: 2020-05-22 22:33+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,6 +57,22 @@ msgstr "donasi"
 msgid "donation_by_city"
 msgstr "donasi_berdasarkan_kota"
 
+#: core/admin.py:45
+msgid "Mark selected requests as resolved"
+msgstr ""
+
+#: core/admin.py:46
+msgid "Mark selected requests as unresolved"
+msgstr ""
+
+#: core/admin.py:47
+msgid "Mark selected requests as inactive"
+msgstr ""
+
+#: core/admin.py:48
+msgid "Mark selected requests as active"
+msgstr ""
+
 #: core/forms.py:12 core/models.py:92 core/models.py:350
 #: templates/help_request/details.html:125
 msgid "Location"
@@ -80,9 +96,9 @@ msgid ""
 "your home a good option may be the nearest police station or some other "
 "nearby public place."
 msgstr ""
-"Plih lokasi sehingga kamu mudah ditemui, jika kamu tidak "
-"ingin menandai rumah pribadi, kamu bisa memilih tempat umum terdekat "
-"(minimarket, kantor polisi, dll)."
+"Plih lokasi sehingga kamu mudah ditemui, jika kamu tidak ingin menandai "
+"rumah pribadi, kamu bisa memilih tempat umum terdekat (minimarket, kantor "
+"polisi, dll)."
 
 #: core/forms.py:42
 msgid "Example: I urgently need food for my family"
@@ -119,8 +135,8 @@ msgid ""
 "Here you can tell in detail what you need, <b> the better you tell your "
 "situation the more likely they want to help you </b>"
 msgstr ""
-"Di sini kamu dapat memberi tahu secara rinci kebutuhanmu, <b> semakin detail deskripsinya, "
-"semakin berpeluang kamu untuk dibantu</b>"
+"Di sini kamu dapat memberi tahu secara rinci kebutuhanmu, <b> semakin detail "
+"deskripsinya, semakin berpeluang kamu untuk dibantu</b>"
 
 #: core/models.py:82
 msgid "Name and surname"
@@ -152,12 +168,17 @@ msgid ""
 "In case you want you can attach a photo related to your request. It is "
 "optional but it can help people better understand your situation."
 msgstr ""
-"Jika mau, kamu dapat melampirkan foto terkait permohonan bantuan kamu. "
-"Kamu tidak wajib melakukannya, tetapi ini akan memudahkan orang lain memahami situasi kamu."
+"Jika mau, kamu dapat melampirkan foto terkait permohonan bantuan kamu. Kamu "
+"tidak wajib melakukannya, tetapi ini akan memudahkan orang lain memahami "
+"situasi kamu."
 
 #: core/models.py:110
 msgid "Added"
 msgstr "Berhasil ditambahkan"
+
+#: core/views.py:57
+msgid "Your request was created successfully!"
+msgstr ""
 
 #: templates/base.html:17
 msgid "A tool to help people help"
@@ -220,7 +241,7 @@ msgid "Home"
 msgstr "Beranda"
 
 #: templates/footer/contact_us.html:14 templates/footer/footer.html:9
-#: templates/footer/general_faq.html:49
+#: templates/footer/general_faq.html:48
 msgid "Contact information"
 msgstr "Kontak"
 
@@ -256,11 +277,11 @@ msgstr "Username"
 msgid "Sign Off"
 msgstr "Keluar"
 
-#: templates/footer/general_faq.html:45
+#: templates/footer/general_faq.html:44
 msgid "Under development"
 msgstr "Dalam pengembangan"
 
-#: templates/footer/general_faq.html:48
+#: templates/footer/general_faq.html:47
 msgid "This section is in development, for any questions visit"
 msgstr "Bagian ini dalam proses pengembangan, jika ada pertanyaan kunjungi"
 
@@ -401,7 +422,7 @@ msgstr ""
 "akan membantu kamu untuk menampilkan permohonan bantuan kamu sehingga "
 "pemberi bantuan dapat mengetahui orang yang perlu dibantu di sekitar mereka "
 
-#: templates/giver/info.html:53 templates/help_request/info.html:49
+#: templates/giver/info.html:54 templates/help_request/info.html:49
 msgid "OK I understand, I want to continue"
 msgstr "OK saya mengerti, saya ingin melanjutkan"
 
@@ -513,7 +534,9 @@ msgstr "Permohonan bantuan non-aktif"
 
 #: templates/help_request/details.html:58
 msgid "Unsubscribed or repeated order, only 1 active order per phone number"
-msgstr "Permohonan bantuan yang sama terulang, hanya diijinkan 1 permohonan per nomor telfon"
+msgstr ""
+"Permohonan bantuan yang sama terulang, hanya diijinkan 1 permohonan per "
+"nomor telfon"
 
 #: templates/help_request/details.html:62
 msgid "We find this active order with the same number"
@@ -535,6 +558,10 @@ msgstr "Permohonan bantuan selesai ditandai 'telah dibantu'"
 msgid "Name"
 msgstr "Nama"
 
+#: templates/help_request/details.html:114
+msgid "Contact"
+msgstr "kontak"
+
 #: templates/help_request/details.html:133
 msgid "Maps credited to Google Maps"
 msgstr "Peta dari Google Maps"
@@ -550,7 +577,8 @@ msgstr "Pilih kota..."
 #: templates/help_request/list.html:45
 msgid "If you don't see your city it is because there are no request"
 msgstr ""
-"Jika kamu tidak melihat kota yang kamu cari artinya tidak ada permohonan bantuan di sana."
+"Jika kamu tidak melihat kota yang kamu cari artinya tidak ada permohonan "
+"bantuan di sana."
 
 #: templates/help_request/list.html:71
 msgid "My Location"

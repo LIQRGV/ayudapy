@@ -54,7 +54,7 @@ def request_form(request):
                 # ignore if we can't set the help_request_ownser
                 print(str(e))
 
-            messages.success(request, "¡Se creó tu pedido exitosamente!")
+            messages.success(request, _("Your request was created successfully!"))
             return redirect("request-detail", id=new_help_request.id)
     else:
         form = HelpRequestForm()

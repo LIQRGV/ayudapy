@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.utils.translation import gettext as _
 from leaflet.admin import LeafletGeoAdmin
 
 from .models import (
@@ -41,10 +42,10 @@ class HelpRequestAdmin(LeafletGeoAdmin):
     actions = [resolve, unresolve, deactivate, activate]
 
 
-resolve.short_description = "Marcar pedidos seleccionados como resueltos"
-unresolve.short_description = "Marcar pedidos seleccionados como NO resueltos"
-deactivate.short_description = "Marcar pedidos seleccionados como inactivos"
-activate.short_description = "Marcar pedidos seleccionados como activos"
+resolve.short_description = _("Mark selected requests as resolved")
+unresolve.short_description = _("Mark selected requests as unresolved")
+deactivate.short_description = _("Mark selected requests as inactive")
+activate.short_description = _("Mark selected requests as active")
 
 
 admin.site.register(HelpRequest, HelpRequestAdmin)

@@ -59,19 +59,19 @@ msgstr "donasi_berdasarkan_kota"
 
 #: core/admin.py:45
 msgid "Mark selected requests as resolved"
-msgstr ""
+msgstr "Tandai permohonan telah dibantu"
 
 #: core/admin.py:46
 msgid "Mark selected requests as unresolved"
-msgstr ""
+msgstr "Tandai permohonan belum dibantu"
 
 #: core/admin.py:47
 msgid "Mark selected requests as inactive"
-msgstr ""
+msgstr "Tandai permohonan tidak aktif"
 
 #: core/admin.py:48
 msgid "Mark selected requests as active"
-msgstr ""
+msgstr "Tandai permohonan aktif"
 
 #: core/forms.py:12 core/models.py:92 core/models.py:350
 #: templates/help_request/details.html:125

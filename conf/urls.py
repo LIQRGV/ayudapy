@@ -34,7 +34,7 @@ urlpatterns = [
     # donations
     path('ceder', org_views.donation_form, name="donation-form"),
     path('donar', RestrictedView.as_view()),
-    path(_('donations'), org_views.list_donation),
+    path(_('donations'), org_views.list_donation, name='donations'),
     path(_('donation_by_city') + '/<slug:city>', org_views.list_donation_by_city, name='donation-by-city'),
     path(_('donations') + '/<int:id>', org_views.view_donation_center, name='donation-detail'),
     # volunteer
